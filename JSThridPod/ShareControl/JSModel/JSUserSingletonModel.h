@@ -10,7 +10,7 @@
 
 @interface JSUserSingletonModel : NSObject
 
-+ (JSUserSingletonModel*)getInstance;
++ (JSUserSingletonModel*)share;
 
 
 //用户Email

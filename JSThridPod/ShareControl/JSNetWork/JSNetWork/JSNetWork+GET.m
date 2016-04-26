@@ -17,29 +17,29 @@
 -(NSString *)AbsoluteUrl:(NSString *)url{
     //Session
     //Session
-    NSString *session= [JSUserSingletonModel getInstance].sesion;
+    NSString *session= [JSUserSingletonModel share].sesion;
     if (!IS_NSString(session)) session=@"";
     
     
     
     //country code
-    NSString *country_code= [JSUserSingletonModel getInstance].countryCode;
+    NSString *country_code= [JSUserSingletonModel share].countryCode;
     if (!IS_NSString(country_code)) country_code=@"";
     
     
     // lng
-    NSString *lng= [JSUserSingletonModel getInstance].language;
+    NSString *lng= [JSUserSingletonModel share].language;
     if (!IS_NSString(lng)) lng=@"";
     
     
     
     //current
-    NSString *currency= [JSUserSingletonModel getInstance].currency;
+    NSString *currency= [JSUserSingletonModel share].currency;
     if (!IS_NSString(currency)) currency=@"";
     
     
     //toke
-    NSString *toke= [JSUserSingletonModel getInstance].toke;
+    NSString *toke= [JSUserSingletonModel share].toke;
     if (!IS_NSString(toke)) toke=@"";
     
 

@@ -46,7 +46,7 @@ tableview 集成功能（暂时不考虑分组）
 
  */
 
-@interface JSTableViewController : UITableViewController
+@interface JSTableViewController : UITableViewController<UIViewControllerPreviewingDelegate>
 
 
 
@@ -73,6 +73,9 @@ tableview 集成功能（暂时不考虑分组）
 //初始化方法
 - (instancetype)initWithState:(JSTableViewState)state tableViewCellClass:(Class) cellclass delegate:(id<JSTableViewControllerDelegate>)delegate;
 
+#pragma mark -注册3DTouch 功能
+
+@property(nonatomic,assign)BOOL isEnable3DTouch;
 
 
 @end
@@ -113,7 +116,14 @@ tableview 集成功能（暂时不考虑分组）
 -(CGFloat)JSTableViewController:(JSTableViewController *)JSCtrl  heightForFooterInSection:(NSInteger)section;
 
 
+#pragma mark --------3DTouch-----------------
 
+//Peek
+
+-(UIViewController *)JSTableViewController:(JSTableViewController *)JSCtrl  previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location;
+
+//POP
+-(void)JSTableViewController:(JSTableViewController *)JSCtrl  popViewController:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit;
 
 @end
 

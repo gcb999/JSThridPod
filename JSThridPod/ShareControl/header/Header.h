@@ -40,6 +40,7 @@
 //集成3DTouch
 #import "AppDelegate+ThridDTouch.h"
 
+
 #pragma mark -----------第三方头文件------------
 
 
@@ -106,6 +107,8 @@
 
 #import "JSTableViewController+StretchableTableHeaderView.h"//头部放大
 
+#import "JSTableViewController+ThreeDTouch.h"////3DTouch
+
 
 
 //Collection头文件
@@ -116,6 +119,8 @@
 #import "JSCollectionViewController+CollectionView.h"
 
 #import "JSCollectionViewDelegate.h"//代理方法
+
+#import "JSCollectionViewController+ThreeDTouch.h"//3DTouch
 
 
 

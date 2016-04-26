@@ -54,6 +54,8 @@ static NSString *const SWCollectionFooterIdentifier = @"SWMJCollectionFooterCont
 @interface JSCollectionViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 
 
+
+
 #pragma mark - 是否每次进入页面加载一次网络请求
 @property(nonatomic,assign)BOOL IsEveryLoading;// 是否只加载一次;
 
@@ -96,6 +98,11 @@ static NSString *const SWCollectionFooterIdentifier = @"SWMJCollectionFooterCont
 
 @property(nonatomic,strong)UICollectionViewLayout *flowLayout;
 
+#pragma mark -注册3DTouch 功能
+
+@property(nonatomic,assign)BOOL isEnable3DTouch;
+
+
 
 
 @end
@@ -123,6 +130,16 @@ static NSString *const SWCollectionFooterIdentifier = @"SWMJCollectionFooterCont
 //底部大小
 -(CGSize)JSCollectionViewController:(JSCollectionViewController *)JSCtrl layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section;
 
+//3dTouch
+
+#pragma mark --------3DTouch-----------------
+
+//Peek
+
+-(UIViewController *)JSCollectionViewController:(JSCollectionViewController *)JSCtrl  previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location;
+
+//POP
+-(void)JSCollectionViewController:(JSCollectionViewController *)JSCtrl  popViewController:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit;
 
 
 

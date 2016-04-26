@@ -14,6 +14,10 @@
 
 -(void)JSTableViewController:(JSTableViewController *)SWCtrl TableViewDateArr:(NSArray *)dateArr cellValue:(id)date indexPath:(NSIndexPath *)indexpath{
     self.textLabel.text=date;
+    
+ 
+
 }
+
 
 @end

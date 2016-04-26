@@ -24,6 +24,8 @@
     // Override point for customization after application launch.
 //    [self initSidePlane];//侧滑配置
     
+    //集成3DTouch Home Quick
+    [self Init3DTouchHomeQuick];
     
     JSTabBarControllerConfig *tabBarControllerConfig = [[JSTabBarControllerConfig alloc] init];
     [self.window setRootViewController:tabBarControllerConfig.tabBarController];

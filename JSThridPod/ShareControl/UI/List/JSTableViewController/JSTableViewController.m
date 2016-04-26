@@ -28,6 +28,8 @@
         _state=state;
         _cellClass=cellclass;
         self.delegate=delegate;
+    
+        
         
         
     }
@@ -84,9 +86,26 @@
         
         
     }
-
+  
+    //集成3DTouch功能
+    if (self.isEnable3DTouch) {
+        if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable){
+            
+            [self registerForPreviewingWithDelegate:self sourceView:self.view];
+            
+            NSLog(@"3D Touch  可用!");
+            
+        }else{
+            
+            NSLog(@"3D Touch 无效");
+        }
+        
+    }
     
 }
+
+
+
 
 
 

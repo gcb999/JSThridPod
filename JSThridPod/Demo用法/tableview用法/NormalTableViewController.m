@@ -10,6 +10,7 @@
 
 #import "NormalTableViewController.h"
 #import "HomeTableCell.h"
+#import "FirstViewController.h"
 
 /*
  
@@ -43,7 +44,9 @@
 
 
 @interface NormalTableViewController ()<JSTableViewControllerDelegate>
-
+{
+    UIView *headerView;
+}
 @end
 
 @implementation NormalTableViewController
@@ -103,6 +106,8 @@
     UILabel *lb=[UILabel LabWithFrame:contentView.bounds text:@"自定义头部View" textColor:KCOLOR_WHITE textAlign:NSTextAlignmentCenter font:KNormalFontSize];
     [contentView addSubview:lb];
     
+    headerView=contentView;
+    
     return contentView;
     
 }
@@ -118,6 +123,11 @@
     
     return contentView;
     
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+
 }
 
 

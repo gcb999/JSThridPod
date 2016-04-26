@@ -10,7 +10,7 @@
 
 @implementation JSUserSingletonModel
 
-+(JSUserSingletonModel*)getInstance{
++(JSUserSingletonModel*)share{
     static dispatch_once_t pred = 0;
     __strong static id _sharedObject = nil;
     dispatch_once(&pred, ^{

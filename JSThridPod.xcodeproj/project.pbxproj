@@ -53,6 +53,9 @@
 		900034E41CC5D4FD000A35CA /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034D81CC5D4FD000A35CA /* JSTabbarViewController.m */; };
 		900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */; };
 		900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */; };
+		908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */; };
+		908716A81CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A71CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m */; };
+		908716AB1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716AA1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m */; };
 		90890A8B1CCF0D77006057ED /* AppDelegate+ThridDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 90890A8A1CCF0D77006057ED /* AppDelegate+ThridDTouch.m */; };
 		90F745E91CC4E5B7005F96FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F745E81CC4E5B7005F96FD /* main.m */; };
 		90F745EC1CC4E5B7005F96FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F745EB1CC4E5B7005F96FD /* AppDelegate.m */; };
@@ -183,6 +186,12 @@
 		900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderAnimationTableViewViewController.m; sourceTree = "<group>"; };
 		900034DC1CC5D4FD000A35CA /* NormalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewController.h; sourceTree = "<group>"; };
 		900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewController.m; sourceTree = "<group>"; };
+		908716A31CCF57FE00568B56 /* UIViewController+ThreeDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ThreeDTouch.h"; sourceTree = "<group>"; };
+		908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ThreeDTouch.m"; sourceTree = "<group>"; };
+		908716A61CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableViewController+ThreeDTouch.h"; sourceTree = "<group>"; };
+		908716A71CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableViewController+ThreeDTouch.m"; sourceTree = "<group>"; };
+		908716A91CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSCollectionViewController+ThreeDTouch.h"; sourceTree = "<group>"; };
+		908716AA1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSCollectionViewController+ThreeDTouch.m"; sourceTree = "<group>"; };
 		90890A891CCF0D77006057ED /* AppDelegate+ThridDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThridDTouch.h"; sourceTree = "<group>"; };
 		90890A8A1CCF0D77006057ED /* AppDelegate+ThridDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThridDTouch.m"; sourceTree = "<group>"; };
 		90F745E41CC4E5B7005F96FD /* JSThridPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSThridPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -377,6 +386,8 @@
 				9000344C1CC5C30A000A35CA /* JSCollectionViewController+NotWorkView.m */,
 				9000344D1CC5C30A000A35CA /* JSCollectionViewController.h */,
 				9000344E1CC5C30A000A35CA /* JSCollectionViewController.m */,
+				908716A91CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.h */,
+				908716AA1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m */,
 			);
 			path = JSCollectionViewController;
 			sourceTree = "<group>";
@@ -417,6 +428,8 @@
 				900034651CC5C30A000A35CA /* JSTableViewController+TableView.m */,
 				900034661CC5C30A000A35CA /* JSTableViewController.h */,
 				900034671CC5C30A000A35CA /* JSTableViewController.m */,
+				908716A61CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.h */,
+				908716A71CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m */,
 			);
 			path = JSTableViewController;
 			sourceTree = "<group>";
@@ -647,6 +660,8 @@
 			children = (
 				90890A891CCF0D77006057ED /* AppDelegate+ThridDTouch.h */,
 				90890A8A1CCF0D77006057ED /* AppDelegate+ThridDTouch.m */,
+				908716A31CCF57FE00568B56 /* UIViewController+ThreeDTouch.h */,
+				908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */,
 			);
 			path = 3DTouch;
 			sourceTree = "<group>";
@@ -788,6 +803,7 @@
 				TargetAttributes = {
 					90F745E31CC4E5B7005F96FD = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = G6Z5A7HG7L;
 					};
 					90F745FC1CC4E5B7005F96FD = {
 						CreatedOnToolsVersion = 7.1;
@@ -915,6 +931,7 @@
 				900034771CC5C30A000A35CA /* JSCollectionViewController+CollectionView.m in Sources */,
 				900033F01CC5C07F000A35CA /* JSError.m in Sources */,
 				9000347B1CC5C30A000A35CA /* BaseFlowLayout.m in Sources */,
+				908716AB1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
 				900034A81CC5C7CF000A35CA /* WeChatStylePlaceHolder.m in Sources */,
 				90890A8B1CCF0D77006057ED /* AppDelegate+ThridDTouch.m in Sources */,
 				900034C41CC5D351000A35CA /* AccountViewController.m in Sources */,
@@ -930,6 +947,7 @@
 				900034821CC5C30A000A35CA /* JSTableViewController+TableView.m in Sources */,
 				9000348B1CC5C331000A35CA /* JSBasicViewController.m in Sources */,
 				900034B91CC5CC3B000A35CA /* HomeTableCell.m in Sources */,
+				908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */,
 				900034101CC5C11B000A35CA /* NSObject+SDWebImage.m in Sources */,
 				900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */,
 				900034961CC5C455000A35CA /* NSDictionary+Extension.m in Sources */,
@@ -942,6 +960,7 @@
 				900034801CC5C30A000A35CA /* JSTableViewController+StretchableTableHeaderView.m in Sources */,
 				90F745E91CC4E5B7005F96FD /* main.m in Sources */,
 				900034111CC5C11B000A35CA /* NSObject+UICateGory.m in Sources */,
+				908716A81CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m in Sources */,
 				9000348F1CC5C3CC000A35CA /* MBProgressHUD+Add.m in Sources */,
 				9000347E1CC5C30A000A35CA /* JSTableViewController+MJRefresh.m in Sources */,
 				900034E01CC5D4FD000A35CA /* CollectionFooterView.m in Sources */,
@@ -1020,7 +1039,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 546611623@qq.com (TB8Z8AX4LN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 546611623@qq.com (TB8Z8AX4LN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1064,7 +1084,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 546611623@qq.com (TB8Z8AX4LN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 546611623@qq.com (TB8Z8AX4LN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1090,11 +1111,15 @@
 			baseConfigurationReference = 6800A6C3510DA20170A8F049 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = /Users/gcb999/Desktop/JSThridPod/JSThridPod/JSThridPod.pch;
 				INFOPLIST_FILE = JSThridPod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gcb999.JSThridPod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sailvan.Dealsale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1103,11 +1128,15 @@
 			baseConfigurationReference = C3EC80AA84E4044190ED1994 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = /Users/gcb999/Desktop/JSThridPod/JSThridPod/JSThridPod.pch;
 				INFOPLIST_FILE = JSThridPod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gcb999.JSThridPod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sailvan.Dealsale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
