@@ -37,6 +37,8 @@
 
 #import "JASidePanelController.h"
 
+//集成3DTouch
+#import "AppDelegate+ThridDTouch.h"
 
 #pragma mark -----------第三方头文件------------
 

@@ -53,6 +53,7 @@
 		900034E41CC5D4FD000A35CA /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034D81CC5D4FD000A35CA /* JSTabbarViewController.m */; };
 		900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */; };
 		900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */; };
+		90890A8B1CCF0D77006057ED /* AppDelegate+ThridDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 90890A8A1CCF0D77006057ED /* AppDelegate+ThridDTouch.m */; };
 		90F745E91CC4E5B7005F96FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F745E81CC4E5B7005F96FD /* main.m */; };
 		90F745EC1CC4E5B7005F96FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F745EB1CC4E5B7005F96FD /* AppDelegate.m */; };
 		90F745EF1CC4E5B7005F96FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F745EE1CC4E5B7005F96FD /* ViewController.m */; };
@@ -182,6 +183,8 @@
 		900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderAnimationTableViewViewController.m; sourceTree = "<group>"; };
 		900034DC1CC5D4FD000A35CA /* NormalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewController.h; sourceTree = "<group>"; };
 		900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewController.m; sourceTree = "<group>"; };
+		90890A891CCF0D77006057ED /* AppDelegate+ThridDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThridDTouch.h"; sourceTree = "<group>"; };
+		90890A8A1CCF0D77006057ED /* AppDelegate+ThridDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThridDTouch.m"; sourceTree = "<group>"; };
 		90F745E41CC4E5B7005F96FD /* JSThridPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSThridPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F745E81CC4E5B7005F96FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90F745EA1CC4E5B7005F96FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -248,6 +251,7 @@
 		900033DD1CC5C05D000A35CA /* ShareControl */ = {
 			isa = PBXGroup;
 			children = (
+				90890A881CCF0D77006057ED /* 3DTouch */,
 				900033FC1CC5C101000A35CA /* UI */,
 				900033F81CC5C0DB000A35CA /* JSModel */,
 				900033E11CC5C07F000A35CA /* JSNetWork */,
@@ -638,6 +642,15 @@
 			path = "tableview用法";
 			sourceTree = "<group>";
 		};
+		90890A881CCF0D77006057ED /* 3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				90890A891CCF0D77006057ED /* AppDelegate+ThridDTouch.h */,
+				90890A8A1CCF0D77006057ED /* AppDelegate+ThridDTouch.m */,
+			);
+			path = 3DTouch;
+			sourceTree = "<group>";
+		};
 		90F745DB1CC4E5B7005F96FD = {
 			isa = PBXGroup;
 			children = (
@@ -903,6 +916,7 @@
 				900033F01CC5C07F000A35CA /* JSError.m in Sources */,
 				9000347B1CC5C30A000A35CA /* BaseFlowLayout.m in Sources */,
 				900034A81CC5C7CF000A35CA /* WeChatStylePlaceHolder.m in Sources */,
+				90890A8B1CCF0D77006057ED /* AppDelegate+ThridDTouch.m in Sources */,
 				900034C41CC5D351000A35CA /* AccountViewController.m in Sources */,
 				900034BD1CC5D27C000A35CA /* JSTabBarControllerConfig.m in Sources */,
 				900033EF1CC5C07F000A35CA /* JSMD5.m in Sources */,
