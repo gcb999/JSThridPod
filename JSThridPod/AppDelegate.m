@@ -13,6 +13,7 @@
 #import "RightViewController.h"
 #import "JSTabBarControllerConfig.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -26,6 +27,10 @@
     
     //集成3DTouch Home Quick
     [self Init3DTouchHomeQuick];
+    
+#pragma mark -初始化  client ID
+    
+    [[JSPayPal share] initPayPalMobile];
     
     JSTabBarControllerConfig *tabBarControllerConfig = [[JSTabBarControllerConfig alloc] init];
     [self.window setRootViewController:tabBarControllerConfig.tabBarController];

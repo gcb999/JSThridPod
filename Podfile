@@ -9,4 +9,6 @@ pod 'FDFullscreenPopGesture', '1.1'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'CYLTabBarController', '~> 1.2.7'
 pod 'JASidePanels', '~> 1.3.2'
-
+pod 'Braintree', '~> 3.9'
+pod 'Braintree/Apple-Pay', '~> 3.9'
+pod 'Braintree/Data', '~> 3.9'

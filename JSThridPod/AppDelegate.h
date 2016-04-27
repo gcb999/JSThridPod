@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSPayPal.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

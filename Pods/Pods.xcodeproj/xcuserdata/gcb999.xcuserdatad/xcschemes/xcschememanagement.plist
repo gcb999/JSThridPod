@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Braintree-Braintree-Drop-In-Localization.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Braintree-Braintree-UI-Localization.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Braintree.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CYLTabBarController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,7 +87,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5073D8F11C0E66470C2D6A81699E6D85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54D3CF1E001E31A674F5AF74407DDA34</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58E9445815B08BDCEF62253B1C312B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8F74D9EA91F4C43190670066BAC37D44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A466291EDEE58A15527BDF203E0AB2CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,22 +117,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B57DF9B42A4C05E47F73996B0CA7337F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C3FD82589C0605D39EE8572BB0608E98</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB6F1867FD5D9F50C84DFB9FBBFBC122</key>
+		<key>C549DBAA78B4A19C3DFB7D94AB08FECF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA208C7ADC02B05053EADFE20890876F</key>
+		<key>DFAAA795194E0B0B27C4D9177E2EFE19</key>
 		<dict>
 			<key>primary</key>
 			<true/>

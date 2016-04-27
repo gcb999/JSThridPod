@@ -12,6 +12,7 @@
 #import "HomeTableCell.h"
 #import "FirstViewController.h"
 
+
 /*
  
  步骤1： 实现JSTableViewControllerDelegate 方法 (必做）
@@ -93,6 +94,23 @@
         [JSCtrl reloadFooter];
         
     }
+}
+
+-(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+   PayPalPayment *ment= [[JSPayPal share] paymentWithOrderId:@"001" subProductItems:nil total:@"100" shipping:nil tax:nil];
+   [[JSPayPal share] PayPalment:ment currentCtrl:self payPalCompletion:^(BOOL isSuccess, PayPalPayment *paypalment) {
+      
+       if (isSuccess) {//支付成功
+          
+           CGFloat amount= [paypalment.amount floatValue];
+           
+       }
+       else{
+            [MBProgressHUD showError:@"支付失败" toView:self.view];
+       }
+       
+       
+   }];
 }
 
 

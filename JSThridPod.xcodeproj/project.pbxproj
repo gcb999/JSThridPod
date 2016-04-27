@@ -53,10 +53,22 @@
 		900034E41CC5D4FD000A35CA /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034D81CC5D4FD000A35CA /* JSTabbarViewController.m */; };
 		900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */; };
 		900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */; };
+		9077547A1CD0C42900CBA350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907754771CD0C42900CBA350 /* libCardIO.a */; };
 		908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */; };
 		908716A81CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A71CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m */; };
 		908716AB1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716AA1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m */; };
 		90890A8B1CCF0D77006057ED /* AppDelegate+ThridDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 90890A8A1CCF0D77006057ED /* AppDelegate+ThridDTouch.m */; };
+		90E0C1961CD04FAA005201A4 /* JSPayPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E0C1951CD04FAA005201A4 /* JSPayPal.m */; };
+		90E0C1B21CD06E0B005201A4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1B11CD06E0B005201A4 /* Accelerate.framework */; };
+		90E0C1B41CD06E12005201A4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1B31CD06E12005201A4 /* AudioToolbox.framework */; };
+		90E0C1B61CD06E20005201A4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1B51CD06E20005201A4 /* AVFoundation.framework */; };
+		90E0C1B81CD06E2A005201A4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1B71CD06E2A005201A4 /* CoreLocation.framework */; };
+		90E0C1BA1CD06E32005201A4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1B91CD06E32005201A4 /* CoreMedia.framework */; };
+		90E0C1BC1CD06E46005201A4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1BB1CD06E46005201A4 /* MobileCoreServices.framework */; };
+		90E0C1BE1CD06E4E005201A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1BD1CD06E4E005201A4 /* SystemConfiguration.framework */; };
+		90E0C1C01CD06E5A005201A4 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1BF1CD06E5A005201A4 /* SafariServices.framework */; };
+		90E0C1C21CD06F80005201A4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0C1C11CD06F80005201A4 /* MessageUI.framework */; };
+		90E0C1C51CD0A2AD005201A4 /* JSBraintree.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E0C1C41CD0A2AD005201A4 /* JSBraintree.m */; };
 		90F745E91CC4E5B7005F96FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F745E81CC4E5B7005F96FD /* main.m */; };
 		90F745EC1CC4E5B7005F96FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F745EB1CC4E5B7005F96FD /* AppDelegate.m */; };
 		90F745EF1CC4E5B7005F96FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F745EE1CC4E5B7005F96FD /* ViewController.m */; };
@@ -186,6 +198,22 @@
 		900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderAnimationTableViewViewController.m; sourceTree = "<group>"; };
 		900034DC1CC5D4FD000A35CA /* NormalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewController.h; sourceTree = "<group>"; };
 		900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewController.m; sourceTree = "<group>"; };
+		9077546F1CD0C42900CBA350 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		907754701CD0C42900CBA350 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		907754711CD0C42900CBA350 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		907754721CD0C42900CBA350 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		907754731CD0C42900CBA350 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		907754741CD0C42900CBA350 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		907754751CD0C42900CBA350 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		907754761CD0C42900CBA350 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		907754771CD0C42900CBA350 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		9077547F1CD0C43100CBA350 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		907754801CD0C43100CBA350 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		907754811CD0C43100CBA350 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		907754821CD0C43100CBA350 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		907754831CD0C43100CBA350 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		907754841CD0C43100CBA350 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		907754851CD0C43100CBA350 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
 		908716A31CCF57FE00568B56 /* UIViewController+ThreeDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ThreeDTouch.h"; sourceTree = "<group>"; };
 		908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ThreeDTouch.m"; sourceTree = "<group>"; };
 		908716A61CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableViewController+ThreeDTouch.h"; sourceTree = "<group>"; };
@@ -194,6 +222,19 @@
 		908716AA1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSCollectionViewController+ThreeDTouch.m"; sourceTree = "<group>"; };
 		90890A891CCF0D77006057ED /* AppDelegate+ThridDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThridDTouch.h"; sourceTree = "<group>"; };
 		90890A8A1CCF0D77006057ED /* AppDelegate+ThridDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThridDTouch.m"; sourceTree = "<group>"; };
+		90E0C1941CD04FAA005201A4 /* JSPayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPayPal.h; sourceTree = "<group>"; };
+		90E0C1951CD04FAA005201A4 /* JSPayPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPayPal.m; sourceTree = "<group>"; };
+		90E0C1B11CD06E0B005201A4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		90E0C1B31CD06E12005201A4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		90E0C1B51CD06E20005201A4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		90E0C1B71CD06E2A005201A4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		90E0C1B91CD06E32005201A4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		90E0C1BB1CD06E46005201A4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		90E0C1BD1CD06E4E005201A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		90E0C1BF1CD06E5A005201A4 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		90E0C1C11CD06F80005201A4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		90E0C1C31CD0A2AD005201A4 /* JSBraintree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBraintree.h; sourceTree = "<group>"; };
+		90E0C1C41CD0A2AD005201A4 /* JSBraintree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBraintree.m; sourceTree = "<group>"; };
 		90F745E41CC4E5B7005F96FD /* JSThridPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSThridPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F745E81CC4E5B7005F96FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90F745EA1CC4E5B7005F96FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -219,7 +260,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E0C1C21CD06F80005201A4 /* MessageUI.framework in Frameworks */,
+				90E0C1C01CD06E5A005201A4 /* SafariServices.framework in Frameworks */,
+				90E0C1BE1CD06E4E005201A4 /* SystemConfiguration.framework in Frameworks */,
+				90E0C1BC1CD06E46005201A4 /* MobileCoreServices.framework in Frameworks */,
+				90E0C1BA1CD06E32005201A4 /* CoreMedia.framework in Frameworks */,
+				90E0C1B81CD06E2A005201A4 /* CoreLocation.framework in Frameworks */,
+				90E0C1B61CD06E20005201A4 /* AVFoundation.framework in Frameworks */,
+				90E0C1B41CD06E12005201A4 /* AudioToolbox.framework in Frameworks */,
+				90E0C1B21CD06E0B005201A4 /* Accelerate.framework in Frameworks */,
 				FC43001EC1CC3C3A4725A3CF /* libPods.a in Frameworks */,
+				9077547A1CD0C42900CBA350 /* libCardIO.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +294,15 @@
 		3C47E971B8BE162FE67BC5FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90E0C1C11CD06F80005201A4 /* MessageUI.framework */,
+				90E0C1BF1CD06E5A005201A4 /* SafariServices.framework */,
+				90E0C1BD1CD06E4E005201A4 /* SystemConfiguration.framework */,
+				90E0C1BB1CD06E46005201A4 /* MobileCoreServices.framework */,
+				90E0C1B91CD06E32005201A4 /* CoreMedia.framework */,
+				90E0C1B71CD06E2A005201A4 /* CoreLocation.framework */,
+				90E0C1B51CD06E20005201A4 /* AVFoundation.framework */,
+				90E0C1B31CD06E12005201A4 /* AudioToolbox.framework */,
+				90E0C1B11CD06E0B005201A4 /* Accelerate.framework */,
 				35572BB2FDA2143148DF525B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -260,6 +320,8 @@
 		900033DD1CC5C05D000A35CA /* ShareControl */ = {
 			isa = PBXGroup;
 			children = (
+				90E0C1C61CD0A8AB005201A4 /* Vendor */,
+				90E0C1931CD04F93005201A4 /* Payment */,
 				90890A881CCF0D77006057ED /* 3DTouch */,
 				900033FC1CC5C101000A35CA /* UI */,
 				900033F81CC5C0DB000A35CA /* JSModel */,
@@ -655,6 +717,36 @@
 			path = "tableview用法";
 			sourceTree = "<group>";
 		};
+		9077546E1CD0C42900CBA350 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				9077546F1CD0C42900CBA350 /* CardIO.h */,
+				907754701CD0C42900CBA350 /* CardIOCreditCardInfo.h */,
+				907754711CD0C42900CBA350 /* CardIODetectionMode.h */,
+				907754721CD0C42900CBA350 /* CardIOPaymentViewController.h */,
+				907754731CD0C42900CBA350 /* CardIOPaymentViewControllerDelegate.h */,
+				907754741CD0C42900CBA350 /* CardIOUtilities.h */,
+				907754751CD0C42900CBA350 /* CardIOView.h */,
+				907754761CD0C42900CBA350 /* CardIOViewDelegate.h */,
+				907754771CD0C42900CBA350 /* libCardIO.a */,
+			);
+			path = CardIO;
+			sourceTree = "<group>";
+		};
+		9077547D1CD0C43100CBA350 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				9077547F1CD0C43100CBA350 /* PayPalConfiguration.h */,
+				907754801CD0C43100CBA350 /* PayPalFuturePaymentViewController.h */,
+				907754811CD0C43100CBA350 /* PayPalMobile.h */,
+				907754821CD0C43100CBA350 /* PayPalOAuthScopes.h */,
+				907754831CD0C43100CBA350 /* PayPalPayment.h */,
+				907754841CD0C43100CBA350 /* PayPalPaymentViewController.h */,
+				907754851CD0C43100CBA350 /* PayPalProfileSharingViewController.h */,
+			);
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
 		90890A881CCF0D77006057ED /* 3DTouch */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +756,26 @@
 				908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */,
 			);
 			path = 3DTouch;
+			sourceTree = "<group>";
+		};
+		90E0C1931CD04F93005201A4 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				90E0C1941CD04FAA005201A4 /* JSPayPal.h */,
+				90E0C1951CD04FAA005201A4 /* JSPayPal.m */,
+				90E0C1C31CD0A2AD005201A4 /* JSBraintree.h */,
+				90E0C1C41CD0A2AD005201A4 /* JSBraintree.m */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		90E0C1C61CD0A8AB005201A4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9077547D1CD0C43100CBA350 /* PayPalMobile */,
+				9077546E1CD0C42900CBA350 /* CardIO */,
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		90F745DB1CC4E5B7005F96FD = {
@@ -918,6 +1030,7 @@
 				9000347C1CC5C30A000A35CA /* HMLineLayout.m in Sources */,
 				900033F21CC5C07F000A35CA /* JSNetWork+POST.m in Sources */,
 				900034121CC5C11B000A35CA /* NSObject+Utilty.m in Sources */,
+				90E0C1961CD04FAA005201A4 /* JSPayPal.m in Sources */,
 				900034E41CC5D4FD000A35CA /* JSTabbarViewController.m in Sources */,
 				900034AA1CC5C7CF000A35CA /* UICollectionView+CYLTableViewPlaceHolder.m in Sources */,
 				900033F11CC5C07F000A35CA /* JSNetWork+GET.m in Sources */,
@@ -937,6 +1050,7 @@
 				900034C41CC5D351000A35CA /* AccountViewController.m in Sources */,
 				900034BD1CC5D27C000A35CA /* JSTabBarControllerConfig.m in Sources */,
 				900033EF1CC5C07F000A35CA /* JSMD5.m in Sources */,
+				90E0C1C51CD0A2AD005201A4 /* JSBraintree.m in Sources */,
 				900034971CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString.m in Sources */,
 				900034E31CC5D4FD000A35CA /* FirstViewController.m in Sources */,
 				900034DF1CC5D4FD000A35CA /* FlowOutCollectionViewController.m in Sources */,
@@ -1043,6 +1157,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 546611623@qq.com (TB8Z8AX4LN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1088,6 +1203,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 546611623@qq.com (TB8Z8AX4LN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1113,10 +1229,42 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/gcb999/Desktop/JSThridPod/JSThridPod/JSThridPod.pch;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JSThridPod/JSThridPod.pch";
 				INFOPLIST_FILE = JSThridPod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JSThridPod/ShareControl/Vendor/PayPalMobile",
+					"$(PROJECT_DIR)/JSThridPod/ShareControl/Vendor/CardIO",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"CYLTabBarController\"",
+					"-l\"FDFullscreenPopGesture\"",
+					"-l\"JASidePanels\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Reachability\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sailvan.Dealsale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1130,10 +1278,42 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/gcb999/Desktop/JSThridPod/JSThridPod/JSThridPod.pch;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JSThridPod/JSThridPod.pch";
 				INFOPLIST_FILE = JSThridPod/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JSThridPod/ShareControl/Vendor/PayPalMobile",
+					"$(PROJECT_DIR)/JSThridPod/ShareControl/Vendor/CardIO",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"CYLTabBarController\"",
+					"-l\"FDFullscreenPopGesture\"",
+					"-l\"JASidePanels\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Reachability\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sailvan.Dealsale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1146,6 +1326,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JSThridPodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JSThridPod/ShareControl/Vendor/PayPalMobile",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = gcb999.JSThridPodTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSThridPod.app/JSThridPod";
@@ -1158,6 +1342,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JSThridPodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JSThridPod/ShareControl/Vendor/PayPalMobile",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = gcb999.JSThridPodTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSThridPod.app/JSThridPod";

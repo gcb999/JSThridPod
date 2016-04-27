@@ -16,8 +16,25 @@
 
 
 
+#define PAYPALENVIRON_TYPE 0
+
+#if PAYPALENVIRON_TYPE ==0
+
+#define PAYPALENVIRONMENT PayPalEnvironmentSandbox//测试
+
+#elif PAYPALENVIRON_TYPE==1
+
+#define PAYPALENVIRONMENT PayPalEnvironmentProduction//正式
+
+#else
+
+#define PAYPALENVIRONMENT PayPalEnvironmentNoNetwork//无网
+
+#endif
 
 
+
+#import "JSPayPal.h"
 
 
 
