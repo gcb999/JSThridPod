@@ -78,7 +78,7 @@
     
     if (currentPage==1) {//初次加载 或者上拉刷新
         [JSCtrl.data removeAllObjects];
-        NSArray *date=@[@"1",@"2"];
+        NSArray *date=@[@"BrainTree",@"PayPal"];
         [JSCtrl.data addObjectsFromArray:date];
         [JSCtrl reloadHeader];
     }
@@ -97,7 +97,35 @@
 }
 
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-   PayPalPayment *ment= [[JSPayPal share] paymentWithOrderId:@"001" subProductItems:nil total:@"100" shipping:nil tax:nil];
+   
+    
+    
+    if (indexPath.row==0) {//brainTree
+        
+        [[JSBraintree share] brainTreeWithClientID:@"aa" amount:@"100" currentCtrl:self braintreeCompletion:^(BOOL isSuccess, BTPaymentMethod *paypalmethod, BTData *btdate, UIViewController *ctrl) {
+           
+            if (isSuccess) {//支付成功
+                
+                NSLog(@"--nonce=%@---collectDeviceData=%@",paypalmethod.nonce,btdate.collectDeviceData);
+                [ctrl dismissViewControllerAnimated:YES completion:^{
+                    
+                }];
+                
+                
+            }
+            else{
+                [MBProgressHUD showError:@"支付失败" toView:self.view];
+            }
+            
+            
+            
+        }];
+        
+        
+    }
+    else{//PayPal
+    
+    PayPalPayment *ment= [[JSPayPal share] paymentWithOrderId:@"001" subProductItems:nil total:@"100" shipping:nil tax:nil];
    [[JSPayPal share] PayPalment:ment currentCtrl:self payPalCompletion:^(BOOL isSuccess, PayPalPayment *paypalment) {
       
        if (isSuccess) {//支付成功
@@ -111,6 +139,8 @@
        
        
    }];
+        
+    }
 }
 
 

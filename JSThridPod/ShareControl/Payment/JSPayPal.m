@@ -75,39 +75,39 @@ NSString *const JSSKU = @"JSSKU";
   
     
    
-//    @try {
-//    
-//        //获取订单下子商品详情
-//        
-//        NSMutableArray<PayPalItem *> *items=[self payPalItems:subProductItems];
-//      
-//        if(items){
-//            _payment.items = items;  // if not including multiple items, then leave payment.items as nil
-//            
-//            
-//            //根据商品 获取subTotal
-//            NSDecimalNumber *subtotal = [PayPalItem totalPriceForItems:items];
-//    
-//            //运费
-//            _shipping=IS_NSString(_shipping)?_shipping:@"0";
-//            NSDecimalNumber *shipping = [[NSDecimalNumber alloc] initWithString:_shipping];
-//            
-//            //税收
-//            _tax=IS_NSString(_tax)?_tax:@"0";
-//            NSDecimalNumber *tax = [[NSDecimalNumber alloc] initWithString:_tax];
-//    
-//            PayPalPaymentDetails *paymentDetails = [PayPalPaymentDetails paymentDetailsWithSubtotal:subtotal
-//                                                                                       withShipping:shipping
-//                                                                                            withTax:tax];
-//             _payment.paymentDetails = paymentDetails;
-//            
-//           
-//        }
-//        
-//    } @catch (NSException *exception) {
-//        
-//        
-//    }
+    @try {
+    
+        //获取订单下子商品详情
+        
+        NSMutableArray<PayPalItem *> *items=[self payPalItems:subProductItems];
+      
+        if(items){
+            _payment.items = items;  // if not including multiple items, then leave payment.items as nil
+            
+            
+            //根据商品 获取subTotal
+            NSDecimalNumber *subtotal = [PayPalItem totalPriceForItems:items];
+    
+            //运费
+            _shipping=IS_NSString(_shipping)?_shipping:@"0";
+            NSDecimalNumber *shipping = [[NSDecimalNumber alloc] initWithString:_shipping];
+            
+            //税收
+            _tax=IS_NSString(_tax)?_tax:@"0";
+            NSDecimalNumber *tax = [[NSDecimalNumber alloc] initWithString:_tax];
+    
+            PayPalPaymentDetails *paymentDetails = [PayPalPaymentDetails paymentDetailsWithSubtotal:subtotal
+                                                                                       withShipping:shipping
+                                                                                            withTax:tax];
+             _payment.paymentDetails = paymentDetails;
+            
+           
+        }
+        
+    } @catch (NSException *exception) {
+        
+        
+    }
     
 
     
@@ -124,47 +124,47 @@ NSString *const JSSKU = @"JSSKU";
 
 
 
-//
-//
-//#pragma mark -获取订单中子商品详情
-//-(NSMutableArray<PayPalItem *> *)payPalItems:( NSArray<NSDictionary *>  *)date{
-//    
-//    if(!IS_NSArray(date)){
-//        return   nil;
-//    }
-//    
-//    @try {
-//
-//                    NSMutableArray<PayPalItem *> *payPalItems=[NSMutableArray<PayPalItem *>  array];
-//
-//                    for (NSDictionary *dic in date) {
-//
-//                    NSString *productName=[NSDictionary getStringByKey:dic Key:JSProductName];
-//
-//                    NSString *quantity=[NSDictionary getStringByKey:dic Key:JSQuantity];
-//
-//                    NSInteger Quantity=[quantity integerValue];
-//
-//                    NSString *Price=[NSDictionary getStringByKey:dic Key:JSPrice];
-//
-//                    NSString *Currency=[NSDictionary getStringByKey:dic Key:JSCurrency];
-//
-//                    NSString *SKU=[NSDictionary getStringByKey:dic Key:JSSKU];
-//
-//                    PayPalItem *item1 = [PayPalItem itemWithName:productName
-//                                                withQuantity:Quantity
-//                                                   withPrice:[NSDecimalNumber decimalNumberWithString:Price]
-//                                                withCurrency:Currency
-//                                                     withSku:SKU];
-//                    [payPalItems addObject:item1];
-//            }
-//                return payPalItems;
-//
-//            } @catch (NSException *exception) {
-//
-//                return nil;
-//            }
-//}
+
+
+#pragma mark -获取订单中子商品详情
+-(NSMutableArray<PayPalItem *> *)payPalItems:( NSArray<NSDictionary *>  *)date{
+    
+    if(!IS_NSArray(date)){
+        return   nil;
+    }
+    
+    @try {
+
+                    NSMutableArray<PayPalItem *> *payPalItems=[NSMutableArray<PayPalItem *>  array];
+
+                    for (NSDictionary *dic in date) {
+
+                    NSString *productName=[NSDictionary getStringByKey:dic Key:JSProductName];
+
+                    NSString *quantity=[NSDictionary getStringByKey:dic Key:JSQuantity];
+
+                    NSInteger Quantity=[quantity integerValue];
+
+                    NSString *Price=[NSDictionary getStringByKey:dic Key:JSPrice];
+
+                    NSString *Currency=[NSDictionary getStringByKey:dic Key:JSCurrency];
+
+                    NSString *SKU=[NSDictionary getStringByKey:dic Key:JSSKU];
+
+                    PayPalItem *item1 = [PayPalItem itemWithName:productName
+                                                withQuantity:Quantity
+                                                   withPrice:[NSDecimalNumber decimalNumberWithString:Price]
+                                                withCurrency:Currency
+                                                     withSku:SKU];
+                    [payPalItems addObject:item1];
+            }
+                return payPalItems;
+
+            } @catch (NSException *exception) {
+
+                return nil;
+            }
+}
 
 
 #pragma mark -支付界面
@@ -181,6 +181,7 @@ NSString *const JSSKU = @"JSSKU";
                                                                                                      delegate:self];
     
     [JSPayPal share].payPalCompletion=payPalCompletion;
+    self.currentCtrl=ctrl;
     
     [ctrl presentViewController:paymentViewController animated:YES completion:^{
         

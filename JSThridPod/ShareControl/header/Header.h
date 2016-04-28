@@ -35,7 +35,7 @@
 
 
 #import "JSPayPal.h"
-
+#import "JSBraintree.h"
 
 
 

@@ -104,7 +104,18 @@
     [self.window makeKeyAndVisible];
     
 }
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    
 
+    
+    BOOL b1=[Braintree handleOpenURL:url sourceApplication:sourceApplication];
+    if (b1) {
+        return YES;
+    }
+    return NO;
+    
+}
 
 
 
