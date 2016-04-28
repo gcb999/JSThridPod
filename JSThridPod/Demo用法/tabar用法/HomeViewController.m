@@ -19,6 +19,8 @@
 //tabbar
 #import "JSTabbarViewController.h"
 
+#import "WYController.h"
+
 @interface HomeViewController ()
 
 @end
@@ -56,7 +58,8 @@
                     @"TableView头部动画用法",
                     @"CollectionView用法",
                     @"CollectionView流水布局",
-                    @"CYLTabBarController的用法"
+                    @"CYLTabBarController的用法",
+                     @"网易横栏的用法"
                     ];
     SWCtrl.data=date;
     [SWCtrl reloadHeader];
@@ -86,11 +89,11 @@
         JSTabbarViewController *ctrl=[[JSTabbarViewController alloc] init];
         [self.navigationController pushViewController:ctrl animated:YES];
     }
-//    else if (indexPath.row==5) {
-//        [[SDImageCache sharedImageCache] clearDisk];
-//        HudViewController *ctrl=[[HudViewController alloc] init];
-//        [self.navigationController pushViewController:ctrl animated:YES];
-//    }
+    else if (indexPath.row==5) {
+   
+        WYController *ctrl=[[WYController alloc] init];
+        [self.navigationController pushViewController:ctrl animated:YES];
+    }
 //    else if (indexPath.row==6) {
 //        
 //        DLTabedSlideView_ViewController *ctrl=[[DLTabedSlideView_ViewController alloc] init];

@@ -54,6 +54,11 @@
 		900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */; };
 		900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */; };
 		904B3BE11CD1BC9E002066FA /* JSApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BE01CD1BC9E002066FA /* JSApplePay.m */; };
+		904B3BF11CD20AE6002066FA /* NinaBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BEB1CD20AE6002066FA /* NinaBaseView.m */; };
+		904B3BF21CD20AE6002066FA /* NinaPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BED1CD20AE6002066FA /* NinaPagerView.m */; };
+		904B3BF31CD20AE6002066FA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BF01CD20AE6002066FA /* UIView+ViewController.m */; };
+		904B3BF71CD20B46002066FA /* JSNinaPagerViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BF61CD20B46002066FA /* JSNinaPagerViewConfig.m */; };
+		904B3BFB1CD20F59002066FA /* WYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BFA1CD20F59002066FA /* WYController.m */; };
 		9077547A1CD0C42900CBA350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907754771CD0C42900CBA350 /* libCardIO.a */; };
 		908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */; };
 		908716A81CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A71CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m */; };
@@ -202,6 +207,17 @@
 		904B3BDE1CD1BBB9002066FA /* JSThridPod.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = JSThridPod.entitlements; sourceTree = "<group>"; };
 		904B3BDF1CD1BC9E002066FA /* JSApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSApplePay.h; sourceTree = "<group>"; };
 		904B3BE01CD1BC9E002066FA /* JSApplePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSApplePay.m; sourceTree = "<group>"; };
+		904B3BEA1CD20AE6002066FA /* NinaBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NinaBaseView.h; sourceTree = "<group>"; };
+		904B3BEB1CD20AE6002066FA /* NinaBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NinaBaseView.m; sourceTree = "<group>"; };
+		904B3BEC1CD20AE6002066FA /* NinaPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NinaPagerView.h; sourceTree = "<group>"; };
+		904B3BED1CD20AE6002066FA /* NinaPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NinaPagerView.m; sourceTree = "<group>"; };
+		904B3BEE1CD20AE6002066FA /* UIParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIParameter.h; sourceTree = "<group>"; };
+		904B3BEF1CD20AE6002066FA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		904B3BF01CD20AE6002066FA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		904B3BF51CD20B46002066FA /* JSNinaPagerViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNinaPagerViewConfig.h; sourceTree = "<group>"; };
+		904B3BF61CD20B46002066FA /* JSNinaPagerViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNinaPagerViewConfig.m; sourceTree = "<group>"; };
+		904B3BF91CD20F59002066FA /* WYController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYController.h; sourceTree = "<group>"; };
+		904B3BFA1CD20F59002066FA /* WYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYController.m; sourceTree = "<group>"; };
 		9077546F1CD0C42900CBA350 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		907754701CD0C42900CBA350 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
 		907754711CD0C42900CBA350 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
@@ -389,6 +405,7 @@
 		900033FC1CC5C101000A35CA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				904B3BF41CD20B2D002066FA /* JSNinaPagerViewConfig */,
 				900034BA1CC5D262000A35CA /* JSTabBarControllerConfig */,
 				900034881CC5C331000A35CA /* JSBasicViewController */,
 				900034441CC5C2FD000A35CA /* List */,
@@ -613,6 +630,7 @@
 		900034AC1CC5CA9D000A35CA /* Demo用法 */ = {
 			isa = PBXGroup;
 			children = (
+				904B3BF81CD20F48002066FA /* 网易横栏的用法 */,
 				900034C51CC5D4FD000A35CA /* collectionView用法 */,
 				900034D41CC5D4FD000A35CA /* CYtabbar用法 */,
 				900034D91CC5D4FD000A35CA /* tableview用法 */,
@@ -721,6 +739,38 @@
 			path = "tableview用法";
 			sourceTree = "<group>";
 		};
+		904B3BE91CD20AE6002066FA /* NinaPagerView */ = {
+			isa = PBXGroup;
+			children = (
+				904B3BEA1CD20AE6002066FA /* NinaBaseView.h */,
+				904B3BEB1CD20AE6002066FA /* NinaBaseView.m */,
+				904B3BEC1CD20AE6002066FA /* NinaPagerView.h */,
+				904B3BED1CD20AE6002066FA /* NinaPagerView.m */,
+				904B3BEE1CD20AE6002066FA /* UIParameter.h */,
+				904B3BEF1CD20AE6002066FA /* UIView+ViewController.h */,
+				904B3BF01CD20AE6002066FA /* UIView+ViewController.m */,
+			);
+			path = NinaPagerView;
+			sourceTree = "<group>";
+		};
+		904B3BF41CD20B2D002066FA /* JSNinaPagerViewConfig */ = {
+			isa = PBXGroup;
+			children = (
+				904B3BF51CD20B46002066FA /* JSNinaPagerViewConfig.h */,
+				904B3BF61CD20B46002066FA /* JSNinaPagerViewConfig.m */,
+			);
+			path = JSNinaPagerViewConfig;
+			sourceTree = "<group>";
+		};
+		904B3BF81CD20F48002066FA /* 网易横栏的用法 */ = {
+			isa = PBXGroup;
+			children = (
+				904B3BF91CD20F59002066FA /* WYController.h */,
+				904B3BFA1CD20F59002066FA /* WYController.m */,
+			);
+			path = "网易横栏的用法";
+			sourceTree = "<group>";
+		};
 		9077546E1CD0C42900CBA350 /* CardIO */ = {
 			isa = PBXGroup;
 			children = (
@@ -778,6 +828,7 @@
 		90E0C1C61CD0A8AB005201A4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				904B3BE91CD20AE6002066FA /* NinaPagerView */,
 				9077547D1CD0C43100CBA350 /* PayPalMobile */,
 				9077546E1CD0C42900CBA350 /* CardIO */,
 			);
@@ -1046,9 +1097,11 @@
 				900034E41CC5D4FD000A35CA /* JSTabbarViewController.m in Sources */,
 				900034AA1CC5C7CF000A35CA /* UICollectionView+CYLTableViewPlaceHolder.m in Sources */,
 				900033F11CC5C07F000A35CA /* JSNetWork+GET.m in Sources */,
+				904B3BF11CD20AE6002066FA /* NinaBaseView.m in Sources */,
 				900034DE1CC5D4FD000A35CA /* CollectionViewCell.m in Sources */,
 				900034B61CC5CAD1000A35CA /* RightViewController.m in Sources */,
 				90F745EF1CC4E5B7005F96FD /* ViewController.m in Sources */,
+				904B3BFB1CD20F59002066FA /* WYController.m in Sources */,
 				900034AB1CC5C7CF000A35CA /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
 				900034791CC5C30A000A35CA /* JSCollectionViewController+NotWorkView.m in Sources */,
 				900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */,
@@ -1071,16 +1124,19 @@
 				900033F31CC5C07F000A35CA /* JSNetWork.m in Sources */,
 				9000347A1CC5C30A000A35CA /* JSCollectionViewController.m in Sources */,
 				900034821CC5C30A000A35CA /* JSTableViewController+TableView.m in Sources */,
+				904B3BF31CD20AE6002066FA /* UIView+ViewController.m in Sources */,
 				904B3BE11CD1BC9E002066FA /* JSApplePay.m in Sources */,
 				9000348B1CC5C331000A35CA /* JSBasicViewController.m in Sources */,
 				900034B91CC5CC3B000A35CA /* HomeTableCell.m in Sources */,
 				908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */,
 				900034101CC5C11B000A35CA /* NSObject+SDWebImage.m in Sources */,
+				904B3BF21CD20AE6002066FA /* NinaPagerView.m in Sources */,
 				900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */,
 				900034961CC5C455000A35CA /* NSDictionary+Extension.m in Sources */,
 				900034831CC5C30A000A35CA /* JSTableViewController.m in Sources */,
 				900034E21CC5D4FD000A35CA /* NormalCollecionViewController.m in Sources */,
 				900033FB1CC5C0DB000A35CA /* JSUserSingletonModel.m in Sources */,
+				904B3BF71CD20B46002066FA /* JSNinaPagerViewConfig.m in Sources */,
 				9000347D1CC5C30A000A35CA /* JSStretchableTableHeaderView.m in Sources */,
 				900034781CC5C30A000A35CA /* JSCollectionViewController+MJRefresh.m in Sources */,
 				90F745EC1CC4E5B7005F96FD /* AppDelegate.m in Sources */,
