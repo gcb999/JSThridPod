@@ -11,7 +11,9 @@
 @interface UIViewController (ThreeDTouch)
 
 #pragma mark -注册3DTouch 功能
+
 -(void)register3DTouchWithSourceView:(UIView *)sourceView  peekViewCtrCls:(Class)peekCls;
+
 
 @property(nonatomic,strong)Class peekCls;
 

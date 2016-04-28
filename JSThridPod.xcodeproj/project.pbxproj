@@ -53,6 +53,7 @@
 		900034E41CC5D4FD000A35CA /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034D81CC5D4FD000A35CA /* JSTabbarViewController.m */; };
 		900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */; };
 		900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */; };
+		904B3BE11CD1BC9E002066FA /* JSApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BE01CD1BC9E002066FA /* JSApplePay.m */; };
 		9077547A1CD0C42900CBA350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907754771CD0C42900CBA350 /* libCardIO.a */; };
 		908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */; };
 		908716A81CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A71CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m */; };
@@ -198,6 +199,9 @@
 		900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderAnimationTableViewViewController.m; sourceTree = "<group>"; };
 		900034DC1CC5D4FD000A35CA /* NormalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewController.h; sourceTree = "<group>"; };
 		900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewController.m; sourceTree = "<group>"; };
+		904B3BDE1CD1BBB9002066FA /* JSThridPod.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = JSThridPod.entitlements; sourceTree = "<group>"; };
+		904B3BDF1CD1BC9E002066FA /* JSApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSApplePay.h; sourceTree = "<group>"; };
+		904B3BE01CD1BC9E002066FA /* JSApplePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSApplePay.m; sourceTree = "<group>"; };
 		9077546F1CD0C42900CBA350 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		907754701CD0C42900CBA350 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
 		907754711CD0C42900CBA350 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
@@ -765,6 +769,8 @@
 				90E0C1951CD04FAA005201A4 /* JSPayPal.m */,
 				90E0C1C31CD0A2AD005201A4 /* JSBraintree.h */,
 				90E0C1C41CD0A2AD005201A4 /* JSBraintree.m */,
+				904B3BDF1CD1BC9E002066FA /* JSApplePay.h */,
+				904B3BE01CD1BC9E002066FA /* JSApplePay.m */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -803,6 +809,7 @@
 		90F745E61CC4E5B7005F96FD /* JSThridPod */ = {
 			isa = PBXGroup;
 			children = (
+				904B3BDE1CD1BBB9002066FA /* JSThridPod.entitlements */,
 				900034AC1CC5CA9D000A35CA /* Demo用法 */,
 				900033DD1CC5C05D000A35CA /* ShareControl */,
 				90F745EA1CC4E5B7005F96FD /* AppDelegate.h */,
@@ -916,6 +923,11 @@
 					90F745E31CC4E5B7005F96FD = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = G6Z5A7HG7L;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 					90F745FC1CC4E5B7005F96FD = {
 						CreatedOnToolsVersion = 7.1;
@@ -1059,6 +1071,7 @@
 				900033F31CC5C07F000A35CA /* JSNetWork.m in Sources */,
 				9000347A1CC5C30A000A35CA /* JSCollectionViewController.m in Sources */,
 				900034821CC5C30A000A35CA /* JSTableViewController+TableView.m in Sources */,
+				904B3BE11CD1BC9E002066FA /* JSApplePay.m in Sources */,
 				9000348B1CC5C331000A35CA /* JSBasicViewController.m in Sources */,
 				900034B91CC5CC3B000A35CA /* HomeTableCell.m in Sources */,
 				908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */,
@@ -1227,6 +1240,7 @@
 			baseConfigurationReference = 6800A6C3510DA20170A8F049 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JSThridPod/JSThridPod.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -1276,6 +1290,7 @@
 			baseConfigurationReference = C3EC80AA84E4044190ED1994 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JSThridPod/JSThridPod.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
