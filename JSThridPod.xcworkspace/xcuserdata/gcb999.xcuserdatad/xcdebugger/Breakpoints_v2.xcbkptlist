@@ -26,7 +26,7 @@
                   moduleName = "JSThridPod"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/gcb999/Desktop/git_JSThirdPod/JSThridPod/JSThridPod/ShareControl/Payment/JSPayPal.m"
-                  timestampString = "483530279.91526"
+                  timestampString = "483585700.951829"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "214"
@@ -41,7 +41,7 @@
                   moduleName = "JSThridPod"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/gcb999/Desktop/git_JSThirdPod/JSThridPod/JSThridPod/ShareControl/Payment/JSPayPal.m"
-                  timestampString = "483530279.91542"
+                  timestampString = "483585700.951965"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "216"
@@ -83,76 +83,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JSThridPod/Demo&#x7528;&#x6cd5;/tableview&#x7528;&#x6cd5;/NormalTableViewController.m"
-            timestampString = "483530287.654139"
+            filePath = "JSThridPod/Demo&#x7528;&#x6cd5;/tableview&#x7528;&#x6cd5;/HeaderAnimationTableViewViewController.m"
+            timestampString = "483585700.243882"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "-JSTableViewController:LoadRequestCurrentPage:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JSThridPod/ShareControl/UI/List/JSTableViewController/JSTableViewController.m"
-            timestampString = "483530305.677419"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-viewDidAppear:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JSThridPod/Demo&#x7528;&#x6cd5;/tableview&#x7528;&#x6cd5;/NormalTableViewController.m"
-            timestampString = "483530339.020103"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
-            landmarkName = "-viewWillAppear:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JSThridPod/Demo&#x7528;&#x6cd5;/tableview&#x7528;&#x6cd5;/NormalTableViewController.m"
-            timestampString = "483530352.44377"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JSThridPod/ShareControl/UI/List/JSTableViewController/JSTableViewController.m"
-            timestampString = "483530364.587416"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
