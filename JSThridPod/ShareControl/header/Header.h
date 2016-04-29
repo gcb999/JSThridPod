@@ -142,8 +142,8 @@
 
 
 //流水瀑布
-#import "BaseFlowLayout.h"
-#import "HMLineLayout.h"
+#import "JSBaseFlowLayout.h"
+#import "JSLineLayout.h"
 
 
 

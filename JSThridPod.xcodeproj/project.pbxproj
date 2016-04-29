@@ -20,8 +20,6 @@
 		900034781CC5C30A000A35CA /* JSCollectionViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9000344A1CC5C30A000A35CA /* JSCollectionViewController+MJRefresh.m */; };
 		900034791CC5C30A000A35CA /* JSCollectionViewController+NotWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9000344C1CC5C30A000A35CA /* JSCollectionViewController+NotWorkView.m */; };
 		9000347A1CC5C30A000A35CA /* JSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9000344E1CC5C30A000A35CA /* JSCollectionViewController.m */; };
-		9000347B1CC5C30A000A35CA /* BaseFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034531CC5C30A000A35CA /* BaseFlowLayout.m */; };
-		9000347C1CC5C30A000A35CA /* HMLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034551CC5C30A000A35CA /* HMLineLayout.m */; };
 		9000347D1CC5C30A000A35CA /* JSStretchableTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034591CC5C30A000A35CA /* JSStretchableTableHeaderView.m */; };
 		9000347E1CC5C30A000A35CA /* JSTableViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9000345D1CC5C30A000A35CA /* JSTableViewController+MJRefresh.m */; };
 		9000347F1CC5C30A000A35CA /* JSTableViewController+NotWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9000345F1CC5C30A000A35CA /* JSTableViewController+NotWorkView.m */; };
@@ -60,6 +58,14 @@
 		904B3BF71CD20B46002066FA /* JSNinaPagerViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BF61CD20B46002066FA /* JSNinaPagerViewConfig.m */; };
 		904B3BFB1CD20F59002066FA /* WYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BFA1CD20F59002066FA /* WYController.m */; };
 		9077547A1CD0C42900CBA350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907754771CD0C42900CBA350 /* libCardIO.a */; };
+		90847D9B1CD307C000564D2B /* Normal001Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847D9A1CD307C000564D2B /* Normal001Controller.m */; };
+		90847D9E1CD308E600564D2B /* JSCollectioinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847D9D1CD308E600564D2B /* JSCollectioinController.m */; };
+		90847DA11CD339D800564D2B /* JSCollectionListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847DA01CD339D800564D2B /* JSCollectionListCell.m */; };
+		90847DA71CD3430D00564D2B /* Normal002Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847DA61CD3430D00564D2B /* Normal002Controller.m */; };
+		90847DAB1CD34D3000564D2B /* JSWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847DAA1CD34D3000564D2B /* JSWaterFlowLayout.m */; };
+		90847DAE1CD34D5100564D2B /* JSWaterFlowOutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847DAD1CD34D5100564D2B /* JSWaterFlowOutController.m */; };
+		90847DB21CD35C4B00564D2B /* JSBaseFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847DB11CD35C4B00564D2B /* JSBaseFlowLayout.m */; };
+		90847DB61CD35C9A00564D2B /* JSLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847DB51CD35C9A00564D2B /* JSLineLayout.m */; };
 		908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */; };
 		908716A81CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716A71CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m */; };
 		908716AB1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 908716AA1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m */; };
@@ -135,10 +141,6 @@
 		9000344D1CC5C30A000A35CA /* JSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionViewController.h; sourceTree = "<group>"; };
 		9000344E1CC5C30A000A35CA /* JSCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCollectionViewController.m; sourceTree = "<group>"; };
 		900034501CC5C30A000A35CA /* JSCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionViewDelegate.h; sourceTree = "<group>"; };
-		900034521CC5C30A000A35CA /* BaseFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFlowLayout.h; sourceTree = "<group>"; };
-		900034531CC5C30A000A35CA /* BaseFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFlowLayout.m; sourceTree = "<group>"; };
-		900034541CC5C30A000A35CA /* HMLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLineLayout.h; sourceTree = "<group>"; };
-		900034551CC5C30A000A35CA /* HMLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLineLayout.m; sourceTree = "<group>"; };
 		900034581CC5C30A000A35CA /* JSStretchableTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStretchableTableHeaderView.h; sourceTree = "<group>"; };
 		900034591CC5C30A000A35CA /* JSStretchableTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStretchableTableHeaderView.m; sourceTree = "<group>"; };
 		9000345B1CC5C30A000A35CA /* JSTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewCellDelegate.h; sourceTree = "<group>"; };
@@ -234,6 +236,22 @@
 		907754831CD0C43100CBA350 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
 		907754841CD0C43100CBA350 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
 		907754851CD0C43100CBA350 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		90847D991CD307C000564D2B /* Normal001Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Normal001Controller.h; sourceTree = "<group>"; };
+		90847D9A1CD307C000564D2B /* Normal001Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Normal001Controller.m; sourceTree = "<group>"; };
+		90847D9C1CD308E600564D2B /* JSCollectioinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectioinController.h; sourceTree = "<group>"; };
+		90847D9D1CD308E600564D2B /* JSCollectioinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCollectioinController.m; sourceTree = "<group>"; };
+		90847D9F1CD339D800564D2B /* JSCollectionListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSCollectionListCell.h; path = ../JSCollectionListCell.h; sourceTree = "<group>"; };
+		90847DA01CD339D800564D2B /* JSCollectionListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSCollectionListCell.m; path = ../JSCollectionListCell.m; sourceTree = "<group>"; };
+		90847DA51CD3430D00564D2B /* Normal002Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Normal002Controller.h; sourceTree = "<group>"; };
+		90847DA61CD3430D00564D2B /* Normal002Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Normal002Controller.m; sourceTree = "<group>"; };
+		90847DA91CD34D3000564D2B /* JSWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWaterFlowLayout.h; sourceTree = "<group>"; };
+		90847DAA1CD34D3000564D2B /* JSWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWaterFlowLayout.m; sourceTree = "<group>"; };
+		90847DAC1CD34D5100564D2B /* JSWaterFlowOutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWaterFlowOutController.h; sourceTree = "<group>"; };
+		90847DAD1CD34D5100564D2B /* JSWaterFlowOutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWaterFlowOutController.m; sourceTree = "<group>"; };
+		90847DB01CD35C4B00564D2B /* JSBaseFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseFlowLayout.h; sourceTree = "<group>"; };
+		90847DB11CD35C4B00564D2B /* JSBaseFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseFlowLayout.m; sourceTree = "<group>"; };
+		90847DB41CD35C9A00564D2B /* JSLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLineLayout.h; sourceTree = "<group>"; };
+		90847DB51CD35C9A00564D2B /* JSLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLineLayout.m; sourceTree = "<group>"; };
 		908716A31CCF57FE00568B56 /* UIViewController+ThreeDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ThreeDTouch.h"; sourceTree = "<group>"; };
 		908716A41CCF57FE00568B56 /* UIViewController+ThreeDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ThreeDTouch.m"; sourceTree = "<group>"; };
 		908716A61CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableViewController+ThreeDTouch.h"; sourceTree = "<group>"; };
@@ -486,10 +504,9 @@
 		900034511CC5C30A000A35CA /* JSFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				900034521CC5C30A000A35CA /* BaseFlowLayout.h */,
-				900034531CC5C30A000A35CA /* BaseFlowLayout.m */,
-				900034541CC5C30A000A35CA /* HMLineLayout.h */,
-				900034551CC5C30A000A35CA /* HMLineLayout.m */,
+				90847DB31CD35C9A00564D2B /* LineLayout */,
+				90847DAF1CD35C4B00564D2B /* BaseFlowLayout */,
+				90847DA81CD34CC200564D2B /* WaterFlowLayout */,
 			);
 			path = JSFlowLayout;
 			sourceTree = "<group>";
@@ -678,6 +695,12 @@
 		900034C51CC5D4FD000A35CA /* collectionView用法 */ = {
 			isa = PBXGroup;
 			children = (
+				90847D9F1CD339D800564D2B /* JSCollectionListCell.h */,
+				90847DA01CD339D800564D2B /* JSCollectionListCell.m */,
+				90847D951CD307A000564D2B /* Collection 商品图片滚动相处 */,
+				90847D961CD307A000564D2B /* Collection流水布局用法 */,
+				90847D971CD307A000564D2B /* BaseFlowOut流水布局用法 */,
+				90847D981CD307A000564D2B /* Collection新手引导页面 */,
 				900034C71CC5D4FD000A35CA /* cell */,
 				900034CA1CC5D4FD000A35CA /* FlowOutCollectionViewController.h */,
 				900034CB1CC5D4FD000A35CA /* FlowOutCollectionViewController.m */,
@@ -685,6 +708,8 @@
 				900034CF1CC5D4FD000A35CA /* header */,
 				900034D21CC5D4FD000A35CA /* NormalCollecionViewController.h */,
 				900034D31CC5D4FD000A35CA /* NormalCollecionViewController.m */,
+				90847D9C1CD308E600564D2B /* JSCollectioinController.h */,
+				90847D9D1CD308E600564D2B /* JSCollectioinController.m */,
 			);
 			path = "collectionView用法";
 			sourceTree = "<group>";
@@ -799,6 +824,68 @@
 				907754851CD0C43100CBA350 /* PayPalProfileSharingViewController.h */,
 			);
 			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
+		90847D951CD307A000564D2B /* Collection 商品图片滚动相处 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Collection 商品图片滚动相处";
+			sourceTree = "<group>";
+		};
+		90847D961CD307A000564D2B /* Collection流水布局用法 */ = {
+			isa = PBXGroup;
+			children = (
+				90847DAC1CD34D5100564D2B /* JSWaterFlowOutController.h */,
+				90847DAD1CD34D5100564D2B /* JSWaterFlowOutController.m */,
+			);
+			path = "Collection流水布局用法";
+			sourceTree = "<group>";
+		};
+		90847D971CD307A000564D2B /* BaseFlowOut流水布局用法 */ = {
+			isa = PBXGroup;
+			children = (
+				90847D991CD307C000564D2B /* Normal001Controller.h */,
+				90847D9A1CD307C000564D2B /* Normal001Controller.m */,
+			);
+			name = "BaseFlowOut流水布局用法";
+			path = "Collection普通用法";
+			sourceTree = "<group>";
+		};
+		90847D981CD307A000564D2B /* Collection新手引导页面 */ = {
+			isa = PBXGroup;
+			children = (
+				90847DA51CD3430D00564D2B /* Normal002Controller.h */,
+				90847DA61CD3430D00564D2B /* Normal002Controller.m */,
+			);
+			path = "Collection新手引导页面";
+			sourceTree = "<group>";
+		};
+		90847DA81CD34CC200564D2B /* WaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				90847DA91CD34D3000564D2B /* JSWaterFlowLayout.h */,
+				90847DAA1CD34D3000564D2B /* JSWaterFlowLayout.m */,
+			);
+			path = WaterFlowLayout;
+			sourceTree = "<group>";
+		};
+		90847DAF1CD35C4B00564D2B /* BaseFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				90847DB01CD35C4B00564D2B /* JSBaseFlowLayout.h */,
+				90847DB11CD35C4B00564D2B /* JSBaseFlowLayout.m */,
+			);
+			path = BaseFlowLayout;
+			sourceTree = "<group>";
+		};
+		90847DB31CD35C9A00564D2B /* LineLayout */ = {
+			isa = PBXGroup;
+			children = (
+				90847DB41CD35C9A00564D2B /* JSLineLayout.h */,
+				90847DB51CD35C9A00564D2B /* JSLineLayout.m */,
+			);
+			path = LineLayout;
 			sourceTree = "<group>";
 		};
 		90890A881CCF0D77006057ED /* 3DTouch */ = {
@@ -1090,7 +1177,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9000347C1CC5C30A000A35CA /* HMLineLayout.m in Sources */,
 				900033F21CC5C07F000A35CA /* JSNetWork+POST.m in Sources */,
 				900034121CC5C11B000A35CA /* NSObject+Utilty.m in Sources */,
 				90E0C1961CD04FAA005201A4 /* JSPayPal.m in Sources */,
@@ -1099,6 +1185,7 @@
 				900033F11CC5C07F000A35CA /* JSNetWork+GET.m in Sources */,
 				904B3BF11CD20AE6002066FA /* NinaBaseView.m in Sources */,
 				900034DE1CC5D4FD000A35CA /* CollectionViewCell.m in Sources */,
+				90847D9E1CD308E600564D2B /* JSCollectioinController.m in Sources */,
 				900034B61CC5CAD1000A35CA /* RightViewController.m in Sources */,
 				90F745EF1CC4E5B7005F96FD /* ViewController.m in Sources */,
 				904B3BFB1CD20F59002066FA /* WYController.m in Sources */,
@@ -1106,9 +1193,9 @@
 				900034791CC5C30A000A35CA /* JSCollectionViewController+NotWorkView.m in Sources */,
 				900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */,
 				900034A91CC5C7CF000A35CA /* XTNetReloader.m in Sources */,
+				90847DAE1CD34D5100564D2B /* JSWaterFlowOutController.m in Sources */,
 				900034771CC5C30A000A35CA /* JSCollectionViewController+CollectionView.m in Sources */,
 				900033F01CC5C07F000A35CA /* JSError.m in Sources */,
-				9000347B1CC5C30A000A35CA /* BaseFlowLayout.m in Sources */,
 				908716AB1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
 				900034A81CC5C7CF000A35CA /* WeChatStylePlaceHolder.m in Sources */,
 				90890A8B1CCF0D77006057ED /* AppDelegate+ThridDTouch.m in Sources */,
@@ -1126,6 +1213,7 @@
 				900034821CC5C30A000A35CA /* JSTableViewController+TableView.m in Sources */,
 				904B3BF31CD20AE6002066FA /* UIView+ViewController.m in Sources */,
 				904B3BE11CD1BC9E002066FA /* JSApplePay.m in Sources */,
+				90847DB61CD35C9A00564D2B /* JSLineLayout.m in Sources */,
 				9000348B1CC5C331000A35CA /* JSBasicViewController.m in Sources */,
 				900034B91CC5CC3B000A35CA /* HomeTableCell.m in Sources */,
 				908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */,
@@ -1137,12 +1225,17 @@
 				900034E21CC5D4FD000A35CA /* NormalCollecionViewController.m in Sources */,
 				900033FB1CC5C0DB000A35CA /* JSUserSingletonModel.m in Sources */,
 				904B3BF71CD20B46002066FA /* JSNinaPagerViewConfig.m in Sources */,
+				90847DAB1CD34D3000564D2B /* JSWaterFlowLayout.m in Sources */,
 				9000347D1CC5C30A000A35CA /* JSStretchableTableHeaderView.m in Sources */,
+				90847D9B1CD307C000564D2B /* Normal001Controller.m in Sources */,
 				900034781CC5C30A000A35CA /* JSCollectionViewController+MJRefresh.m in Sources */,
 				90F745EC1CC4E5B7005F96FD /* AppDelegate.m in Sources */,
 				900034801CC5C30A000A35CA /* JSTableViewController+StretchableTableHeaderView.m in Sources */,
 				90F745E91CC4E5B7005F96FD /* main.m in Sources */,
+				90847DA71CD3430D00564D2B /* Normal002Controller.m in Sources */,
+				90847DA11CD339D800564D2B /* JSCollectionListCell.m in Sources */,
 				900034111CC5C11B000A35CA /* NSObject+UICateGory.m in Sources */,
+				90847DB21CD35C4B00564D2B /* JSBaseFlowLayout.m in Sources */,
 				908716A81CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m in Sources */,
 				9000348F1CC5C3CC000A35CA /* MBProgressHUD+Add.m in Sources */,
 				9000347E1CC5C30A000A35CA /* JSTableViewController+MJRefresh.m in Sources */,

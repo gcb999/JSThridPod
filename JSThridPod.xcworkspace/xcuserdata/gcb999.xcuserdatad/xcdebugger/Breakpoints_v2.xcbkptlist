@@ -4,54 +4,6 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JSThridPod/ShareControl/Payment/JSPayPal.m"
-            timestampString = "483505248.77425"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
-            landmarkName = "-payPalPaymentDidCancel:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[JSPayPal payPalPaymentDidCancel:]"
-                  moduleName = "JSThridPod"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gcb999/Desktop/git_JSThirdPod/JSThridPod/JSThridPod/ShareControl/Payment/JSPayPal.m"
-                  timestampString = "483585700.951829"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "214"
-                  endingLineNumber = "214"
-                  offsetFromSymbolStart = "338">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[JSPayPal payPalPaymentDidCancel:]_block_invoke"
-                  moduleName = "JSThridPod"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gcb999/Desktop/git_JSThirdPod/JSThridPod/JSThridPod/ShareControl/Payment/JSPayPal.m"
-                  timestampString = "483585700.951965"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "216"
-                  endingLineNumber = "216"
-                  offsetFromSymbolStart = "15">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
@@ -67,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JSThridPod/Demo&#x7528;&#x6cd5;/tableview&#x7528;&#x6cd5;/NormalTableViewController.m"
-            timestampString = "483529689.914488"
+            filePath = "JSThridPod/ShareControl/UI/List/JSCollectionViewController/JSCollectionViewController/JSCollectionViewController+CollectionView.m"
+            timestampString = "483604222.189196"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "-collectionView:layout:referenceSizeForHeaderInSection:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -83,13 +35,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JSThridPod/Demo&#x7528;&#x6cd5;/tableview&#x7528;&#x6cd5;/HeaderAnimationTableViewViewController.m"
-            timestampString = "483585700.243882"
+            filePath = "JSThridPod/ShareControl/UI/List/JSCollectionViewController/JSCollectionViewController/JSCollectionViewController+CollectionView.m"
+            timestampString = "483604222.189196"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "-collectionView:layout:referenceSizeForFooterInSection:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JSThridPod/ShareControl/UI/List/JSCollectionViewController/JSFlowLayout/JSBaseFlowLayout.m"
+            timestampString = "483613326.953217"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "-initWithCollectionView:DirectionHorizontal:minimumLineSpacing:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

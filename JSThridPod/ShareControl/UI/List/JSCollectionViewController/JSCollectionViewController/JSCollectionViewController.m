@@ -19,14 +19,7 @@
     
 }
 
-//cell 类
-@property(nonatomic,readonly)Class collectionCellClass;
 
-// header 类
-@property(nonatomic,readonly)Class headerViewClass;
-
-// footer 类
-@property(nonatomic,readonly)Class footerViewClass;
 
 @end
 
@@ -35,13 +28,11 @@
 //正常
 - (instancetype)initWithState:(JSCollectionViewState)state CollectionViewCellClass:(Class) cellclass delegate:(id<JSCollectionViewControllerDelegate>)delegate
 {
-    self = [super init];
-    if (self) {
+    
         
         return  [self  initWithState:state CollectionViewCellClass:cellclass delegate:delegate HeaderViewType:nil footerViewClass:nil];
         
-    }
-    return self;
+
 }
 
 //头部
@@ -114,17 +105,25 @@
     
     //cell
     
-    [self.collectionView registerClass:self.collectionCellClass forCellWithReuseIdentifier:SWCollectionViewCellIdentifier];
+    [self.collectionView registerClass:self.collectionCellClass forCellWithReuseIdentifier:JSCollectionViewCellIdentifier];
     
     //头部
     if (self.headerViewClass) {
-        [self.collectionView registerClass:self.headerViewClass forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SWCollectionHeaderIdentifier];
+        [self.collectionView registerClass:self.headerViewClass forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:JSCollectionHeaderIdentifier];
+        
+    }
+    else{
+        [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:JSCollectionHeaderIdentifier];
         
     }
     
     //底部
     if (self.footerViewClass) {
-        [self.collectionView registerClass:self.footerViewClass forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:SWCollectionFooterIdentifier];
+        [self.collectionView registerClass:self.footerViewClass forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:JSCollectionFooterIdentifier];
+    }
+    else{
+        [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:JSCollectionFooterIdentifier];
+        
     }
     
     

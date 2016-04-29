@@ -6,11 +6,11 @@
 //  Copyright (c) 2014年 heima. All rights reserved.
 //
 
-#import "HMLineLayout.h"
+#import "JSLineLayout.h"
 
 
 
-@implementation HMLineLayout
+@implementation JSLineLayout
 
 
 
@@ -76,10 +76,16 @@
     
     
     
-    CGFloat inset = (self.collectionView.frame.size.width - self.itemSize.width) * 0.5;
-    self.sectionInset = UIEdgeInsetsMake(0, inset, 0, inset);
+    CGFloat left_right = (self.collectionView.frame.size.width - self.itemSize.width) * 0.5;
+    
+    CGFloat top_bottom=(self.collectionView.frame.size.height - self.itemSize.height) * 0.5;
+    
+    
+    self.sectionInset = UIEdgeInsetsMake(top_bottom, left_right, top_bottom, left_right);
+    
     // 设置水平滚动
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    
     self.minimumLineSpacing = self.itemSize.width * 0.7;
     
     // 每一个cell(item)都有自己的UICollectionViewLayoutAttributes

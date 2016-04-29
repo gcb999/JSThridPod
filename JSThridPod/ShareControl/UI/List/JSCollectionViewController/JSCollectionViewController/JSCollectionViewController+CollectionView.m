@@ -34,7 +34,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    self.CollectionViewCellDelegate = [collectionView dequeueReusableCellWithReuseIdentifier:SWCollectionViewCellIdentifier forIndexPath:indexPath];
+    self.CollectionViewCellDelegate = [collectionView dequeueReusableCellWithReuseIdentifier:JSCollectionViewCellIdentifier forIndexPath:indexPath];
     id content=self.data[indexPath.item];
     [self.CollectionViewCellDelegate  JSCollectionViewController:self collectionViewDateArr:self.data cellValue:content indexPath:indexPath];
     return (UICollectionViewCell *)self.CollectionViewCellDelegate;
@@ -53,8 +53,8 @@
 
 #pragma mark --UICollectionViewDelegateFlowLayout
 
-////定义每个UICollectionView 的大小
-//
+//定义每个UICollectionView 的大小
+
 //- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 //{
 //
@@ -84,24 +84,48 @@
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     
-    UICollectionReusableView *reusableview = nil;
-    if (kind == UICollectionElementKindSectionHeader){
-        
-        self.HeaderFooterCollectionViewDelegate=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SWCollectionHeaderIdentifier forIndexPath:indexPath];
-
-    }
-    else if (kind==UICollectionElementKindSectionFooter){
-       self.HeaderFooterCollectionViewDelegate=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:SWCollectionFooterIdentifier forIndexPath:indexPath];
-
-    }
- 
-    [self.HeaderFooterCollectionViewDelegate JSCollectionViewController:self collectionViewDateArr:self.data indexPath:indexPath];
-        
-    reusableview =(UICollectionReusableView *) self.HeaderFooterCollectionViewDelegate;
+    UICollectionReusableView*reusableview=nil;
     
+    
+    
+    if (kind==UICollectionElementKindSectionHeader) {
+        reusableview=[collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                        withReuseIdentifier:JSCollectionHeaderIdentifier
+                                                               forIndexPath:indexPath];
+    }
+    else if(kind==UICollectionElementKindSectionFooter){
+        
+        reusableview=[collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                        withReuseIdentifier:JSCollectionFooterIdentifier
+                                                               forIndexPath:indexPath];
+    }
     
     return reusableview;
     
+    NSString * reuseIdentifier=nil;
+    if (kind==UICollectionElementKindSectionHeader) {
+        reuseIdentifier=@"JSCollectionHeaderIdentifier";
+    }
+    else if (kind==UICollectionElementKindSectionFooter)
+    {
+        
+        reuseIdentifier=@"JSCollectionFooterIdentifier";
+    }
+ 
+            
+     self.HeaderFooterCollectionViewDelegate=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:reuseIdentifier forIndexPath:indexPath];//头部
+
+
+
+    self.HeaderFooterCollectionViewDelegate=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:reuseIdentifier forIndexPath:indexPath];//尾部
+
+    if ([self.HeaderFooterCollectionViewDelegate respondsToSelector:@selector(JSCollectionViewController:collectionViewDateArr:indexPath:)]) {
+        
+        [self.HeaderFooterCollectionViewDelegate JSCollectionViewController:self collectionViewDateArr:self.data indexPath:indexPath];
+    }
+    reusableview =(UICollectionReusableView *) self.HeaderFooterCollectionViewDelegate;
+   
+    return reusableview;
 
     
 }
@@ -115,7 +139,7 @@
     }
     else{
         
-       return CGSizeZero;
+        return CGSizeZero;
         
     }
 }

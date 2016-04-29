@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HMLineLayout : UICollectionViewFlowLayout
+@interface JSLineLayout : UICollectionViewFlowLayout
 
 @property(nonatomic,assign)CGSize size;
 @end

@@ -13,7 +13,7 @@
 #import "HeaderAnimationTableViewViewController.h"
 
 //collectionview
-#import "NormalCollecionViewController.h"
+#import "JSCollectioinController.h"
 #import "FlowOutCollectionViewController.h"
 
 //tabbar
@@ -78,7 +78,7 @@
         [self.navigationController pushViewController:ctrl animated:YES];
     }
     else if (indexPath.row==2) {
-        NormalCollecionViewController *ctrl=[[NormalCollecionViewController alloc] init];
+        JSCollectioinController *ctrl=[[JSCollectioinController alloc] init];
         [self.navigationController pushViewController:ctrl animated:YES];
     }
     else if (indexPath.row==3) {

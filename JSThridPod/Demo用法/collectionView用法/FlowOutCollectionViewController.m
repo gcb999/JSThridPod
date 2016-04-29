@@ -31,9 +31,9 @@
     [self.view addSubview:ctrl.view];
     [self addChildViewController:ctrl];
     
-    BaseFlowLayout *flowlayOunt=[[BaseFlowLayout alloc] initWithScrollDirection:UICollectionViewScrollDirectionVertical itemSize:CGSizeMake(IPHONScreenWidth*0.5f-30, 100)];
+//    JSBaseFlowLayout *flowlayOunt=[[JSBaseFlowLayout alloc] initWithScrollDirection:UICollectionViewScrollDirectionVertical itemSize:CGSizeMake(IPHONScreenWidth*0.5f-30, 100)];
     
-    ctrl.flowLayout=flowlayOunt;
+//    ctrl.flowLayout=flowlayOunt;
 }
 
 //JSCollectionViewController:LoadRequestCurrentPage:

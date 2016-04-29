@@ -78,7 +78,7 @@
     
     if (currentPage==1) {//初次加载 或者上拉刷新
         [JSCtrl.data removeAllObjects];
-        NSArray *date=@[@"BrainTree",@"PayPal"];
+        NSArray *date=@[@"BrainTree",@"PayPal",@"click"];
         [JSCtrl.data addObjectsFromArray:date];
         [JSCtrl reloadHeader];
     }
@@ -123,7 +123,8 @@
         
         
     }
-    else{//PayPal
+    
+    else if(indexPath.row==1){//PayPal
     
     PayPalPayment *ment= [[JSPayPal share] paymentWithOrderId:@"001" subProductItems:nil total:@"100" shipping:nil tax:nil];
    [[JSPayPal share] PayPalment:ment currentCtrl:self payPalCompletion:^(BOOL isSuccess, PayPalPayment *paypalment) {
@@ -139,6 +140,12 @@
        
        
    }];
+        
+    }
+    else{
+        
+        FirstViewController *ctrl=[[FirstViewController alloc] init];
+        [self.navigationController pushViewController:ctrl animated:YES];
         
     }
 }

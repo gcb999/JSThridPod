@@ -26,13 +26,13 @@ typedef enum {
 
 
 //cell
-static NSString *const SWCollectionViewCellIdentifier = @"SWMJCollectionViewController";
+static NSString *const JSCollectionViewCellIdentifier = @"JSCollectionViewCellIdentifier";
 
 //header
-static NSString *const SWCollectionHeaderIdentifier = @"SWMJCollectionHeaderController";
+static NSString *const JSCollectionHeaderIdentifier = @"JSCollectionHeaderIdentifier";
 
 //footer
-static NSString *const SWCollectionFooterIdentifier = @"SWMJCollectionFooterController";
+static NSString *const JSCollectionFooterIdentifier = @"JSCollectionFooterIdentifier";
 
 
 /*
@@ -54,6 +54,14 @@ static NSString *const SWCollectionFooterIdentifier = @"SWMJCollectionFooterCont
 @interface JSCollectionViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 
 
+//cell 类
+@property(nonatomic,readonly)Class collectionCellClass;
+
+// header 类
+@property(nonatomic,readonly)Class headerViewClass;
+
+// footer 类
+@property(nonatomic,readonly)Class footerViewClass;
 
 
 #pragma mark - 是否每次进入页面加载一次网络请求
