@@ -17,4 +17,11 @@
 @property (assign, nonatomic) CGFloat titleScale; /**< 标题缩放比例 **/
 
 - (instancetype)initWithFrame:(CGRect)frame WithSelectColor:(UIColor *)selectColor WithUnselectorColor:(UIColor *)unselectColor WithUnderLineColor:(UIColor *)underlineColor WithtopTabColor:(UIColor *)topTabColor;
+
+
+#pragma mark -添加选中按钮
+
+-(void)selectedIndex:(NSInteger)index;
+
+
 @end

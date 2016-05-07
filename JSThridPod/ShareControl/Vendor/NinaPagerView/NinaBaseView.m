@@ -9,6 +9,8 @@
 #import "NinaBaseView.h"
 #import "UIParameter.h"
 
+#define KNinaBaseView_Button_Tag 100
+
 @interface NinaBaseView ()
 
 @end
@@ -107,7 +109,7 @@
         btnArray = [NSMutableArray array];
         for (NSInteger i = 0; i < titlesArray.count; i++) {            
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-            button.tag = i;
+            button.tag = i+KNinaBaseView_Button_Tag;
             button.titleLabel.font = [UIFont systemFontOfSize:14];
             if ([titlesArray[i] isKindOfClass:[NSString class]]) {
                  [button setTitle:titlesArray[i] forState:UIControlStateNormal];
@@ -157,8 +159,10 @@
 
 #pragma mark - BtnMethod
 - (void)touchAction:(UIButton *)button {
-    [_scrollView setContentOffset:CGPointMake(FUll_VIEW_WIDTH * button.tag, 0) animated:YES];
-    self.currentPage = (FUll_VIEW_WIDTH * button.tag + FUll_VIEW_WIDTH / 2) / FUll_VIEW_WIDTH;
+    
+    NSInteger tag=button.tag-KNinaBaseView_Button_Tag;
+    [_scrollView setContentOffset:CGPointMake(FUll_VIEW_WIDTH * tag, 0) animated:YES];
+    self.currentPage = (FUll_VIEW_WIDTH * tag + FUll_VIEW_WIDTH / 2) / FUll_VIEW_WIDTH;
     
 }
 
@@ -223,6 +227,15 @@
     }
     lineBottom.frame = CGRectMake(0, PageBtn - 2,yourCount * FUll_VIEW_WIDTH, 2);
     topTabBottomLine.frame = CGRectMake(0, PageBtn - 1, (1 + additionCount) * FUll_VIEW_WIDTH, 1);    
+}
+
+
+#pragma mark -添加选中按钮
+
+-(void)selectedIndex:(NSInteger)index{
+    
+    UIButton *btn=[_topTab viewWithTag:(index+KNinaBaseView_Button_Tag)];
+    [self touchAction:btn];
 }
 
 @end

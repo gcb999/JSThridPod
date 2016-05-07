@@ -23,7 +23,6 @@
         //line
         UIImageView *line=[UIImageView ImageViewImageName:nil frame:rect];
         line.backgroundColor=[UIColor blackColor];
-
         [self.contentView addSubview:line];
     }
     return self;

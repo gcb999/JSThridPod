@@ -12,7 +12,10 @@
 #import "UIView+ViewController.h"
 #define MaxNums  10
 
-@interface NinaPagerView()<NSCacheDelegate>
+@interface NinaPagerView()<NSCacheDelegate>{
+ 
+    NSInteger _currentPage;
+}
 @property (nonatomic, strong)NSCache *limitControllerCache; /**< 内存管理，避免创建过多的控制器所导致内存过于庞大   **/
 @end
 
@@ -121,6 +124,20 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"currentPage"]) {
         NSInteger page = [change[@"new"] integerValue];
+        
+        //通过新页面与旧页码进行判断是否加入新控制器------------by ganchaobo
+        
+        if (_currentPage==page) {
+            return;
+        }
+        else{
+            _currentPage=page;
+        }
+        
+        
+        //------------------
+        
+        
         if (isDebug) {
             NSLog(@"现在是控制器%li",(long)page + 1);
         }
@@ -258,6 +275,14 @@
     ctrl.view.frame = CGRectMake(FUll_VIEW_WIDTH * i, 0, FUll_VIEW_WIDTH, FUll_CONTENT_HEIGHT - PageBtn);
     [pagerView.scrollView addSubview:ctrl.view];
     viewAlloc[i] = YES;
+}
+
+
+#pragma mark -添加选中按钮
+
+-(void)selectedIndex:(NSInteger)index{
+    
+    [pagerView selectedIndex:index];
 }
 
 @end

@@ -10,7 +10,9 @@
 #import "JSNinaPagerViewConfig.h"
 
 @interface WYController ()<NinaPagerViewDelegate>
-
+{
+    JSNinaPagerViewConfig *config;
+}
 @end
 
 
@@ -66,10 +68,10 @@
     [super viewDidLoad];
     
     self.title=@"网易横栏的用法";
-    CGRect rect = CGRectMake(0, 44, IPHONScreenWidth, IPHONScreenHeight-44);
-    JSNinaPagerViewConfig *config=[[JSNinaPagerViewConfig alloc] initWithFrame:rect titles:[self titles] vcs:[self Controllers] delegate:self];
+    CGRect rect = self.contentView.bounds;
+    config=[[JSNinaPagerViewConfig alloc] initWithFrame:rect titles:[self titles] vcs:[self Controllers] delegate:self];
     [config loadingConfig];
-    [self.view addSubview:config];
+    [self.contentView addSubview:config];
   
     
 }
@@ -77,4 +79,9 @@
 -(BOOL)deallocVCsIfUnnecessary{
     return YES;
 }
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [config selectedIndex:3];
+}
+
 @end

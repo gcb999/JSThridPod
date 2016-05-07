@@ -59,7 +59,7 @@
                     @"CollectionView用法",
                     @"CollectionView流水布局",
                     @"CYLTabBarController的用法",
-                     @"网易横栏的用法"
+                    @"网易横栏的用法"
                     ];
     SWCtrl.data=date;
     [SWCtrl reloadHeader];

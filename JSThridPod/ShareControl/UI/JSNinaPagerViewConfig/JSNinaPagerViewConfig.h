@@ -42,6 +42,10 @@
 -(void) loadingConfig;
 
 
+#pragma mark -添加选中按钮
+
+-(void)selectedIndex:(NSInteger)index;
+
 
 
 
