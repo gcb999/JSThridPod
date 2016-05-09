@@ -69,6 +69,7 @@
     
     self.title=@"网易横栏的用法";
     CGRect rect = self.contentView.bounds;
+    self.contentView.backgroundColor=[UIColor yellowColor];
     config=[[JSNinaPagerViewConfig alloc] initWithFrame:rect titles:[self titles] vcs:[self Controllers] delegate:self];
     [config loadingConfig];
     [self.contentView addSubview:config];
@@ -82,6 +83,9 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [config selectedIndex:3];
+
 }
+
+
 
 @end
