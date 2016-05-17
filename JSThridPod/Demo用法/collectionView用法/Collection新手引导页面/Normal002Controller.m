@@ -26,6 +26,7 @@
     
     JSLineLayout *layout=[[JSLineLayout alloc] init];
     
+    
     CGRect rect =self.contentView.bounds;
     
     JSCollectionViewController *ctrl=[[JSCollectionViewController alloc] initWithState:JSCollectionViewNormal CollectionViewCellClass:[CollectionViewCell class] delegate:self];

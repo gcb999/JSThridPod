@@ -58,6 +58,9 @@
 		904B3BF71CD20B46002066FA /* JSNinaPagerViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BF61CD20B46002066FA /* JSNinaPagerViewConfig.m */; };
 		904B3BFB1CD20F59002066FA /* WYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BFA1CD20F59002066FA /* WYController.m */; };
 		9077547A1CD0C42900CBA350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907754771CD0C42900CBA350 /* libCardIO.a */; };
+		907AE0861CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 907AE0831CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m */; };
+		907AE0871CEB05EF00B1F7F2 /* JSPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907AE0851CEB05EF00B1F7F2 /* JSPresentView.m */; };
+		907AE08B1CEB07B400B1F7F2 /* JSPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907AE08A1CEB07B400B1F7F2 /* JSPickerViewController.m */; };
 		90847D9B1CD307C000564D2B /* Normal001Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847D9A1CD307C000564D2B /* Normal001Controller.m */; };
 		90847D9E1CD308E600564D2B /* JSCollectioinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847D9D1CD308E600564D2B /* JSCollectioinController.m */; };
 		90847DA11CD339D800564D2B /* JSCollectionListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90847DA01CD339D800564D2B /* JSCollectionListCell.m */; };
@@ -236,6 +239,12 @@
 		907754831CD0C43100CBA350 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
 		907754841CD0C43100CBA350 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
 		907754851CD0C43100CBA350 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		907AE0821CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPresentCommonViewCtrl.h; sourceTree = "<group>"; };
+		907AE0831CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPresentCommonViewCtrl.m; sourceTree = "<group>"; };
+		907AE0841CEB05EF00B1F7F2 /* JSPresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPresentView.h; sourceTree = "<group>"; };
+		907AE0851CEB05EF00B1F7F2 /* JSPresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPresentView.m; sourceTree = "<group>"; };
+		907AE0891CEB07B400B1F7F2 /* JSPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPickerViewController.h; sourceTree = "<group>"; };
+		907AE08A1CEB07B400B1F7F2 /* JSPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPickerViewController.m; sourceTree = "<group>"; };
 		90847D991CD307C000564D2B /* Normal001Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Normal001Controller.h; sourceTree = "<group>"; };
 		90847D9A1CD307C000564D2B /* Normal001Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Normal001Controller.m; sourceTree = "<group>"; };
 		90847D9C1CD308E600564D2B /* JSCollectioinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectioinController.h; sourceTree = "<group>"; };
@@ -423,6 +432,7 @@
 		900033FC1CC5C101000A35CA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				907AE0811CEB05EF00B1F7F2 /* JSDatePicker */,
 				904B3BF41CD20B2D002066FA /* JSNinaPagerViewConfig */,
 				900034BA1CC5D262000A35CA /* JSTabBarControllerConfig */,
 				900034881CC5C331000A35CA /* JSBasicViewController */,
@@ -647,6 +657,7 @@
 		900034AC1CC5CA9D000A35CA /* Demo用法 */ = {
 			isa = PBXGroup;
 			children = (
+				907AE0881CEB079E00B1F7F2 /* 日期与下弹出列表用法 */,
 				904B3BF81CD20F48002066FA /* 网易横栏的用法 */,
 				900034C51CC5D4FD000A35CA /* collectionView用法 */,
 				900034D41CC5D4FD000A35CA /* CYtabbar用法 */,
@@ -824,6 +835,26 @@
 				907754851CD0C43100CBA350 /* PayPalProfileSharingViewController.h */,
 			);
 			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
+		907AE0811CEB05EF00B1F7F2 /* JSDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				907AE0821CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.h */,
+				907AE0831CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m */,
+				907AE0841CEB05EF00B1F7F2 /* JSPresentView.h */,
+				907AE0851CEB05EF00B1F7F2 /* JSPresentView.m */,
+			);
+			path = JSDatePicker;
+			sourceTree = "<group>";
+		};
+		907AE0881CEB079E00B1F7F2 /* 日期与下弹出列表用法 */ = {
+			isa = PBXGroup;
+			children = (
+				907AE0891CEB07B400B1F7F2 /* JSPickerViewController.h */,
+				907AE08A1CEB07B400B1F7F2 /* JSPickerViewController.m */,
+			);
+			path = "日期与下弹出列表用法";
 			sourceTree = "<group>";
 		};
 		90847D951CD307A000564D2B /* Collection 商品图片滚动相处 */ = {
@@ -1196,6 +1227,7 @@
 				90847DAE1CD34D5100564D2B /* JSWaterFlowOutController.m in Sources */,
 				900034771CC5C30A000A35CA /* JSCollectionViewController+CollectionView.m in Sources */,
 				900033F01CC5C07F000A35CA /* JSError.m in Sources */,
+				907AE0861CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m in Sources */,
 				908716AB1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
 				900034A81CC5C7CF000A35CA /* WeChatStylePlaceHolder.m in Sources */,
 				90890A8B1CCF0D77006057ED /* AppDelegate+ThridDTouch.m in Sources */,
@@ -1210,10 +1242,12 @@
 				900034E11CC5D4FD000A35CA /* CollectionHeaderView.m in Sources */,
 				900033F31CC5C07F000A35CA /* JSNetWork.m in Sources */,
 				9000347A1CC5C30A000A35CA /* JSCollectionViewController.m in Sources */,
+				907AE0871CEB05EF00B1F7F2 /* JSPresentView.m in Sources */,
 				900034821CC5C30A000A35CA /* JSTableViewController+TableView.m in Sources */,
 				904B3BF31CD20AE6002066FA /* UIView+ViewController.m in Sources */,
 				904B3BE11CD1BC9E002066FA /* JSApplePay.m in Sources */,
 				90847DB61CD35C9A00564D2B /* JSLineLayout.m in Sources */,
+				907AE08B1CEB07B400B1F7F2 /* JSPickerViewController.m in Sources */,
 				9000348B1CC5C331000A35CA /* JSBasicViewController.m in Sources */,
 				900034B91CC5CC3B000A35CA /* HomeTableCell.m in Sources */,
 				908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */,

@@ -21,6 +21,8 @@
 
 #import "WYController.h"
 
+#import "JSPickerViewController.h"
+
 @interface HomeViewController ()
 
 @end
@@ -59,7 +61,8 @@
                     @"CollectionView用法",
                     @"CollectionView流水布局",
                     @"CYLTabBarController的用法",
-                    @"网易横栏的用法"
+                    @"网易横栏的用法",
+                     @"日期与下弹出列表用法"
                     ];
     SWCtrl.data=date;
     [SWCtrl reloadHeader];
@@ -94,11 +97,11 @@
         WYController *ctrl=[[WYController alloc] init];
         [self.navigationController pushViewController:ctrl animated:YES];
     }
-//    else if (indexPath.row==6) {
-//        
-//        DLTabedSlideView_ViewController *ctrl=[[DLTabedSlideView_ViewController alloc] init];
-//        [self.navigationController pushViewController:ctrl animated:YES];
-//    }
+    else if (indexPath.row==6) {
+        
+        JSPickerViewController *ctrl=[[JSPickerViewController alloc] init];
+        [self.navigationController pushViewController:ctrl animated:YES];
+    }
     
     //CYLTabBarViewController
     

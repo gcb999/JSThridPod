@@ -59,10 +59,6 @@
     self.title=@"tableView的所用用法";
     
     
-    
-    
-    
-    
     CGRect rect =self.view.bounds;
     
     JSTableViewController *ctrl=[[JSTableViewController alloc] initWithState:JSTableViewPullHeaderFooter tableViewCellClass:[HomeTableCell class] delegate:self];
@@ -133,8 +129,10 @@
           
            CGFloat amount= [paypalment.amount floatValue];
            
+     
        }
        else{
+           
             [MBProgressHUD showError:@"支付失败" toView:self.view];
        }
        

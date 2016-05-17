@@ -35,6 +35,7 @@
     
     
     /*
+     
     UIImageView *avater = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
     avater.image = [UIImage imageNamed:@"avater"];
     avater.center = contentView.center;

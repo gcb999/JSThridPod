@@ -10,4 +10,5 @@
 
 @interface AccountViewController : JSBasicViewController
 
+
 @end
