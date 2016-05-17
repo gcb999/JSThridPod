@@ -21,9 +21,10 @@ static UIView *alphaView;
 static  UIView *msubView;
 
 
+#pragma mark -自定义弹出高度
 
-+(void)showWithSubView:(UIView*)subView {
-    
+
++(void)showWithSubView:(UIView*)subView  rowHeight:(CGFloat)rowHeight{
     
     CGRect r = [[UIApplication sharedApplication] keyWindow].frame;
     
@@ -42,7 +43,7 @@ static  UIView *msubView;
     msubView=subView;
     
     CGRect hrect,rect=r;
-    CGFloat heigth=(1-KJSPresentView)*rect.size.height;
+    CGFloat heigth=(1-rowHeight)*rect.size.height;
     CGRectDivide(rect, &hrect, &rect, heigth, CGRectMinYEdge);
     
     
@@ -71,8 +72,13 @@ static  UIView *msubView;
         
         
     }];
-    
-    
+}
+
+#pragma mark -默认弹出高度0.5
+
++(void)showWithSubView:(UIView*)subView {
+
+    [self showWithSubView:subView rowHeight:0.5];
     
 }
 

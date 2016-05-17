@@ -7,15 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#define  KJSPresentView   0.5
+
 
 @interface JSPresentView : UIView{
     
     
 }
 
-
+#pragma mark -默认弹出高度0.5
 +(void)showWithSubView:(UIView*)subView ;
+
+#pragma mark -自定义弹出高度
++(void)showWithSubView:(UIView*)subView  rowHeight:(CGFloat)rowHeight;
+
 
 +(void)hidePresentSubView;
 
