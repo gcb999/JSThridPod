@@ -48,6 +48,8 @@
 		900034E41CC5D4FD000A35CA /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034D81CC5D4FD000A35CA /* JSTabbarViewController.m */; };
 		900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */; };
 		900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */; };
+		900ADF6A1CEC663700175412 /* UIWindow+Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 900ADF691CEC663700175412 /* UIWindow+Launch.m */; };
+		900ADF6E1CEC67A700175412 /* CoreArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 900ADF6D1CEC67A700175412 /* CoreArchive.m */; };
 		904B3BE11CD1BC9E002066FA /* JSApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BE01CD1BC9E002066FA /* JSApplePay.m */; };
 		904B3BF11CD20AE6002066FA /* NinaBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BEB1CD20AE6002066FA /* NinaBaseView.m */; };
 		904B3BF21CD20AE6002066FA /* NinaPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BED1CD20AE6002066FA /* NinaPagerView.m */; };
@@ -222,6 +224,10 @@
 		900034DB1CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderAnimationTableViewViewController.m; sourceTree = "<group>"; };
 		900034DC1CC5D4FD000A35CA /* NormalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewController.h; sourceTree = "<group>"; };
 		900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewController.m; sourceTree = "<group>"; };
+		900ADF681CEC663700175412 /* UIWindow+Launch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Launch.h"; sourceTree = "<group>"; };
+		900ADF691CEC663700175412 /* UIWindow+Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Launch.m"; sourceTree = "<group>"; };
+		900ADF6C1CEC67A700175412 /* CoreArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreArchive.h; sourceTree = "<group>"; };
+		900ADF6D1CEC67A700175412 /* CoreArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreArchive.m; sourceTree = "<group>"; };
 		904B3BDE1CD1BBB9002066FA /* JSThridPod.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = JSThridPod.entitlements; sourceTree = "<group>"; };
 		904B3BDF1CD1BC9E002066FA /* JSApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSApplePay.h; sourceTree = "<group>"; };
 		904B3BE01CD1BC9E002066FA /* JSApplePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSApplePay.m; sourceTree = "<group>"; };
@@ -504,6 +510,8 @@
 		900033FD1CC5C11B000A35CA /* NSCategory */ = {
 			isa = PBXGroup;
 			children = (
+				900ADF6B1CEC67A700175412 /* CoreArchive */,
+				900ADF671CEC663700175412 /* UIWindow */,
 				906875411CEC090200A22C7C /* NSDictionary */,
 				9068753D1CEC08ED00A22C7C /* NSMutableAttributedString */,
 				906875391CEC08E800A22C7C /* MBProgressHUD */,
@@ -814,6 +822,24 @@
 				900034DD1CC5D4FD000A35CA /* NormalTableViewController.m */,
 			);
 			path = "tableview用法";
+			sourceTree = "<group>";
+		};
+		900ADF671CEC663700175412 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				900ADF681CEC663700175412 /* UIWindow+Launch.h */,
+				900ADF691CEC663700175412 /* UIWindow+Launch.m */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		900ADF6B1CEC67A700175412 /* CoreArchive */ = {
+			isa = PBXGroup;
+			children = (
+				900ADF6C1CEC67A700175412 /* CoreArchive.h */,
+				900ADF6D1CEC67A700175412 /* CoreArchive.m */,
+			);
+			path = CoreArchive;
 			sourceTree = "<group>";
 		};
 		904B3BE91CD20AE6002066FA /* NinaPagerView */ = {
@@ -1395,6 +1421,7 @@
 				906875441CEC090200A22C7C /* NSDictionary+Extension.m in Sources */,
 				9068752F1CEBFFFB00A22C7C /* UIImage+FixOrientation.m in Sources */,
 				900034DE1CC5D4FD000A35CA /* CollectionViewCell.m in Sources */,
+				900ADF6A1CEC663700175412 /* UIWindow+Launch.m in Sources */,
 				90847D9E1CD308E600564D2B /* JSCollectioinController.m in Sources */,
 				900034B61CC5CAD1000A35CA /* RightViewController.m in Sources */,
 				90F745EF1CC4E5B7005F96FD /* ViewController.m in Sources */,
@@ -1430,6 +1457,7 @@
 				9068752A1CEBFFFB00A22C7C /* UIDevice+Extend.m in Sources */,
 				9000347A1CC5C30A000A35CA /* JSCollectionViewController.m in Sources */,
 				907AE0871CEB05EF00B1F7F2 /* JSPresentView.m in Sources */,
+				900ADF6E1CEC67A700175412 /* CoreArchive.m in Sources */,
 				9068752C1CEBFFFB00A22C7C /* UIImage+Color.m in Sources */,
 				900034821CC5C30A000A35CA /* JSTableViewController+TableView.m in Sources */,
 				904B3BF31CD20AE6002066FA /* UIView+ViewController.m in Sources */,

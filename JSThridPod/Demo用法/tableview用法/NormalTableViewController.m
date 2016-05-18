@@ -52,18 +52,27 @@
 
 @implementation NormalTableViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.hiddenNav=NO;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.title=@"tableView的所用用法";
+    [self addBackBtn];
+   
     
-    
-    CGRect rect =self.view.bounds;
+    CGRect rect =self.contentView.bounds;
     
     JSTableViewController *ctrl=[[JSTableViewController alloc] initWithState:JSTableViewPullHeaderFooter tableViewCellClass:[HomeTableCell class] delegate:self];
     ctrl.view.frame=rect;
-    [self.view addSubview:ctrl.view];
+    [self.contentView addSubview:ctrl.view];
     [self addChildViewController:ctrl];
     
 }
@@ -183,5 +192,11 @@
 
 }
 
+
+-(void)leftBtnClicked:(UIButton *)btn{
+    
+    [self.view removeFromSuperview];
+    [self removeFromParentViewController];
+}
 
 @end

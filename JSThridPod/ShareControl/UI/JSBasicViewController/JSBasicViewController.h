@@ -35,5 +35,8 @@
 -(void) popViewController:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit;
 
 
+- (void)loadTitleView;
 
+#pragma mark ---左侧按钮
+- (void)addBackBtn;
 @end

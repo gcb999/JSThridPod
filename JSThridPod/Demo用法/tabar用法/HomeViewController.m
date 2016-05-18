@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import  "HomeTableCell.h"
+
 //tableview
 #import "NormalTableViewController.h"
 #import "HeaderAnimationTableViewViewController.h"
@@ -73,8 +74,11 @@
 -(void)JSTableViewController:(JSTableViewController *)SWCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row==0) {
+  
         NormalTableViewController *ctrl=[[NormalTableViewController alloc] init];
-        [self.navigationController pushViewController:ctrl animated:YES];
+//        [self.navigationController pushViewController:ctrl animated:NO];
+        [self zoomPhotoVC:ctrl];
+//        [self.navigationController.view.layer  transitionWithAnimType:TransitionAnimTypeRamdom subType:TransitionSubtypesFromRamdom curve:TransitionCurveRamdom duration:2.0f];
     }
     else if (indexPath.row==1) {
         HeaderAnimationTableViewViewController *ctrl=[[HeaderAnimationTableViewViewController alloc] init];
@@ -108,6 +112,44 @@
     
 }
 
+
+/** zoom */
+-(void)zoomPhotoVC:(JSBasicViewController *)vc{
+    
+    
+    //拿到window
+    UIWindow *window = self.view.window;
+    
+    if(window == nil){
+        
+        NSLog(@"错误：窗口为空！");
+        return;
+    }
+    
+//    PhotoModel *photoModel = self.photoModels[self.index];
+//    
+   vc.navView.hidden = YES;
+    
+    self.view.frame=[UIScreen mainScreen].bounds;
+    
+    //添加视图
+    [window addSubview:vc.view];
+    
+    //添加子控制器
+    [self addChildViewController:vc];
+    
+     vc.navView.alpha=0;
+    
+    [UIView animateWithDuration:.25f animations:^{
+         vc.navView.alpha=1;
+    } completion:^(BOOL finished) {
+//        photoModel.sourceImageView.hidden = NO;
+    }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.6f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        vc.view.backgroundColor = [UIColor blackColor];
+    });
+}
 
 
 @end

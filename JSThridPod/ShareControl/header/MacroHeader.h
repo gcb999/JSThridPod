@@ -64,10 +64,23 @@
 
 #import "NSObject+UICateGory.h"
 
+#import "NSObject+Extend.h"
+
+//----动画--------
 
 
+#import "CALayer+Anim.h"
+
+#import "CALayer+Transition.h"
+
+//----window-------
+
+#import "UIWindow+Launch.h"
 
 
+//----沙盒，归档-------
+
+#import "CoreArchive.h"
 
 
 
