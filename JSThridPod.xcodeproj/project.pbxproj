@@ -28,9 +28,6 @@
 		900034821CC5C30A000A35CA /* JSTableViewController+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034651CC5C30A000A35CA /* JSTableViewController+TableView.m */; };
 		900034831CC5C30A000A35CA /* JSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034671CC5C30A000A35CA /* JSTableViewController.m */; };
 		9000348B1CC5C331000A35CA /* JSBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9000348A1CC5C331000A35CA /* JSBasicViewController.m */; };
-		9000348F1CC5C3CC000A35CA /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 9000348E1CC5C3CC000A35CA /* MBProgressHUD+Add.m */; };
-		900034961CC5C455000A35CA /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034921CC5C455000A35CA /* NSDictionary+Extension.m */; };
-		900034971CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034951CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString.m */; };
 		900034A81CC5C7CF000A35CA /* WeChatStylePlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9000349E1CC5C7CF000A35CA /* WeChatStylePlaceHolder.m */; };
 		900034A91CC5C7CF000A35CA /* XTNetReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034A11CC5C7CF000A35CA /* XTNetReloader.m */; };
 		900034AA1CC5C7CF000A35CA /* UICollectionView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 900034A41CC5C7CF000A35CA /* UICollectionView+CYLTableViewPlaceHolder.m */; };
@@ -57,6 +54,28 @@
 		904B3BF31CD20AE6002066FA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BF01CD20AE6002066FA /* UIView+ViewController.m */; };
 		904B3BF71CD20B46002066FA /* JSNinaPagerViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BF61CD20B46002066FA /* JSNinaPagerViewConfig.m */; };
 		904B3BFB1CD20F59002066FA /* WYController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904B3BFA1CD20F59002066FA /* WYController.m */; };
+		906874EC1CEBFD8D00A22C7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906874EB1CEBFD8D00A22C7C /* QuartzCore.framework */; };
+		906875221CEBFFFB00A22C7C /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = 906874F71CEBFFFA00A22C7C /* CALayer+Anim.m */; };
+		906875231CEBFFFB00A22C7C /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 906874F91CEBFFFA00A22C7C /* CALayer+Transition.m */; };
+		906875241CEBFFFB00A22C7C /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 906874FC1CEBFFFA00A22C7C /* NSArray+Extend.m */; };
+		906875251CEBFFFB00A22C7C /* NSDate+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 906874FF1CEBFFFA00A22C7C /* NSDate+Extend.m */; };
+		906875261CEBFFFB00A22C7C /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875021CEBFFFA00A22C7C /* NSObject+Extend.m */; };
+		906875271CEBFFFB00A22C7C /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875051CEBFFFB00A22C7C /* NSString+Extend.m */; };
+		906875281CEBFFFB00A22C7C /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875071CEBFFFB00A22C7C /* NSString+Password.m */; };
+		906875291CEBFFFB00A22C7C /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068750A1CEBFFFB00A22C7C /* UIColor+Extend.m */; };
+		9068752A1CEBFFFB00A22C7C /* UIDevice+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068750D1CEBFFFB00A22C7C /* UIDevice+Extend.m */; };
+		9068752B1CEBFFFB00A22C7C /* UIFont+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875101CEBFFFB00A22C7C /* UIFont+Extend.m */; };
+		9068752C1CEBFFFB00A22C7C /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875131CEBFFFB00A22C7C /* UIImage+Color.m */; };
+		9068752D1CEBFFFB00A22C7C /* UIImage+Cut.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875151CEBFFFB00A22C7C /* UIImage+Cut.m */; };
+		9068752E1CEBFFFB00A22C7C /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875171CEBFFFB00A22C7C /* UIImage+Extend.m */; };
+		9068752F1CEBFFFB00A22C7C /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875191CEBFFFB00A22C7C /* UIImage+FixOrientation.m */; };
+		906875301CEBFFFB00A22C7C /* UIImage+Water.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068751B1CEBFFFB00A22C7C /* UIImage+Water.m */; };
+		906875321CEBFFFB00A22C7C /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875211CEBFFFB00A22C7C /* UIView+Extend.m */; };
+		906875351CEC035E00A22C7C /* NSString+dateFromString.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875341CEC035E00A22C7C /* NSString+dateFromString.m */; };
+		906875381CEC039800A22C7C /* NSData+stringFromDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875371CEC039800A22C7C /* NSData+stringFromDate.m */; };
+		9068753C1CEC08E800A22C7C /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068753B1CEC08E800A22C7C /* MBProgressHUD+Add.m */; };
+		906875401CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068753F1CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.m */; };
+		906875441CEC090200A22C7C /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875431CEC090200A22C7C /* NSDictionary+Extension.m */; };
 		9077547A1CD0C42900CBA350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907754771CD0C42900CBA350 /* libCardIO.a */; };
 		907AE0861CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 907AE0831CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m */; };
 		907AE0871CEB05EF00B1F7F2 /* JSPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907AE0851CEB05EF00B1F7F2 /* JSPresentView.m */; };
@@ -161,12 +180,6 @@
 		900034671CC5C30A000A35CA /* JSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableViewController.m; sourceTree = "<group>"; };
 		900034891CC5C331000A35CA /* JSBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBasicViewController.h; sourceTree = "<group>"; };
 		9000348A1CC5C331000A35CA /* JSBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBasicViewController.m; sourceTree = "<group>"; };
-		9000348D1CC5C3CC000A35CA /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
-		9000348E1CC5C3CC000A35CA /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
-		900034911CC5C455000A35CA /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
-		900034921CC5C455000A35CA /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
-		900034941CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CBAttributedString.h"; sourceTree = "<group>"; };
-		900034951CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CBAttributedString.m"; sourceTree = "<group>"; };
 		900034991CC5C7CF000A35CA /* JSListViewEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSListViewEmptyView.h; sourceTree = "<group>"; };
 		9000349A1CC5C7CF000A35CA /* JSListViewEmptyViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSListViewEmptyViewDelegate.h; sourceTree = "<group>"; };
 		9000349D1CC5C7CF000A35CA /* WeChatStylePlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatStylePlaceHolder.h; sourceTree = "<group>"; };
@@ -223,6 +236,49 @@
 		904B3BF61CD20B46002066FA /* JSNinaPagerViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNinaPagerViewConfig.m; sourceTree = "<group>"; };
 		904B3BF91CD20F59002066FA /* WYController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYController.h; sourceTree = "<group>"; };
 		904B3BFA1CD20F59002066FA /* WYController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYController.m; sourceTree = "<group>"; };
+		906874EB1CEBFD8D00A22C7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		906874F61CEBFFFA00A22C7C /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		906874F71CEBFFFA00A22C7C /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		906874F81CEBFFFA00A22C7C /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
+		906874F91CEBFFFA00A22C7C /* CALayer+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Transition.m"; sourceTree = "<group>"; };
+		906874FB1CEBFFFA00A22C7C /* NSArray+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extend.h"; sourceTree = "<group>"; };
+		906874FC1CEBFFFA00A22C7C /* NSArray+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extend.m"; sourceTree = "<group>"; };
+		906874FE1CEBFFFA00A22C7C /* NSDate+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extend.h"; sourceTree = "<group>"; };
+		906874FF1CEBFFFA00A22C7C /* NSDate+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extend.m"; sourceTree = "<group>"; };
+		906875011CEBFFFA00A22C7C /* NSObject+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extend.h"; sourceTree = "<group>"; };
+		906875021CEBFFFA00A22C7C /* NSObject+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extend.m"; sourceTree = "<group>"; };
+		906875041CEBFFFB00A22C7C /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		906875051CEBFFFB00A22C7C /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
+		906875061CEBFFFB00A22C7C /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
+		906875071CEBFFFB00A22C7C /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
+		906875091CEBFFFB00A22C7C /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		9068750A1CEBFFFB00A22C7C /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		9068750C1CEBFFFB00A22C7C /* UIDevice+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extend.h"; sourceTree = "<group>"; };
+		9068750D1CEBFFFB00A22C7C /* UIDevice+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extend.m"; sourceTree = "<group>"; };
+		9068750F1CEBFFFB00A22C7C /* UIFont+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extend.h"; sourceTree = "<group>"; };
+		906875101CEBFFFB00A22C7C /* UIFont+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extend.m"; sourceTree = "<group>"; };
+		906875121CEBFFFB00A22C7C /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		906875131CEBFFFB00A22C7C /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		906875141CEBFFFB00A22C7C /* UIImage+Cut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Cut.h"; sourceTree = "<group>"; };
+		906875151CEBFFFB00A22C7C /* UIImage+Cut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Cut.m"; sourceTree = "<group>"; };
+		906875161CEBFFFB00A22C7C /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		906875171CEBFFFB00A22C7C /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		906875181CEBFFFB00A22C7C /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		906875191CEBFFFB00A22C7C /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		9068751A1CEBFFFB00A22C7C /* UIImage+Water.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Water.h"; sourceTree = "<group>"; };
+		9068751B1CEBFFFB00A22C7C /* UIImage+Water.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Water.m"; sourceTree = "<group>"; };
+		906875201CEBFFFB00A22C7C /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
+		906875211CEBFFFB00A22C7C /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
+		906875331CEC035E00A22C7C /* NSString+dateFromString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+dateFromString.h"; sourceTree = "<group>"; };
+		906875341CEC035E00A22C7C /* NSString+dateFromString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+dateFromString.m"; sourceTree = "<group>"; };
+		906875361CEC039800A22C7C /* NSData+stringFromDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+stringFromDate.h"; sourceTree = "<group>"; };
+		906875371CEC039800A22C7C /* NSData+stringFromDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+stringFromDate.m"; sourceTree = "<group>"; };
+		9068753A1CEC08E800A22C7C /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		9068753B1CEC08E800A22C7C /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		9068753E1CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CBAttributedString.h"; sourceTree = "<group>"; };
+		9068753F1CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CBAttributedString.m"; sourceTree = "<group>"; };
+		906875421CEC090200A22C7C /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		906875431CEC090200A22C7C /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		9077546F1CD0C42900CBA350 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		907754701CD0C42900CBA350 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
 		907754711CD0C42900CBA350 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
@@ -307,6 +363,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906874EC1CEBFD8D00A22C7C /* QuartzCore.framework in Frameworks */,
 				90E0C1C21CD06F80005201A4 /* MessageUI.framework in Frameworks */,
 				90E0C1C01CD06E5A005201A4 /* SafariServices.framework in Frameworks */,
 				90E0C1BE1CD06E4E005201A4 /* SystemConfiguration.framework in Frameworks */,
@@ -341,6 +398,7 @@
 		3C47E971B8BE162FE67BC5FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				906874EB1CEBFD8D00A22C7C /* QuartzCore.framework */,
 				90E0C1C11CD06F80005201A4 /* MessageUI.framework */,
 				90E0C1BF1CD06E5A005201A4 /* SafariServices.framework */,
 				90E0C1BD1CD06E4E005201A4 /* SystemConfiguration.framework */,
@@ -446,9 +504,19 @@
 		900033FD1CC5C11B000A35CA /* NSCategory */ = {
 			isa = PBXGroup;
 			children = (
-				900034901CC5C455000A35CA /* NSDictionary+Extension */,
-				900034931CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString */,
-				9000348C1CC5C3CC000A35CA /* MBProgressHUD+Add */,
+				906875411CEC090200A22C7C /* NSDictionary */,
+				9068753D1CEC08ED00A22C7C /* NSMutableAttributedString */,
+				906875391CEC08E800A22C7C /* MBProgressHUD */,
+				906874F51CEBFFFA00A22C7C /* CALayer */,
+				906874FA1CEBFFFA00A22C7C /* NSArray */,
+				906874FD1CEBFFFA00A22C7C /* NSDate */,
+				906875001CEBFFFA00A22C7C /* NSObject */,
+				906875031CEBFFFA00A22C7C /* NSString */,
+				906875081CEBFFFB00A22C7C /* UIColor */,
+				9068750B1CEBFFFB00A22C7C /* UIDevice */,
+				9068750E1CEBFFFB00A22C7C /* UIFont */,
+				906875111CEBFFFB00A22C7C /* UIImage */,
+				9068751F1CEBFFFB00A22C7C /* UIView */,
 			);
 			path = NSCategory;
 			sourceTree = "<group>";
@@ -568,33 +636,6 @@
 				9000348A1CC5C331000A35CA /* JSBasicViewController.m */,
 			);
 			path = JSBasicViewController;
-			sourceTree = "<group>";
-		};
-		9000348C1CC5C3CC000A35CA /* MBProgressHUD+Add */ = {
-			isa = PBXGroup;
-			children = (
-				9000348D1CC5C3CC000A35CA /* MBProgressHUD+Add.h */,
-				9000348E1CC5C3CC000A35CA /* MBProgressHUD+Add.m */,
-			);
-			path = "MBProgressHUD+Add";
-			sourceTree = "<group>";
-		};
-		900034901CC5C455000A35CA /* NSDictionary+Extension */ = {
-			isa = PBXGroup;
-			children = (
-				900034911CC5C455000A35CA /* NSDictionary+Extension.h */,
-				900034921CC5C455000A35CA /* NSDictionary+Extension.m */,
-			);
-			path = "NSDictionary+Extension";
-			sourceTree = "<group>";
-		};
-		900034931CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString */ = {
-			isa = PBXGroup;
-			children = (
-				900034941CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString.h */,
-				900034951CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString.m */,
-			);
-			path = "NSMutableAttributedString+CBAttributedString";
 			sourceTree = "<group>";
 		};
 		900034981CC5C7CF000A35CA /* JSListEmptyView */ = {
@@ -805,6 +846,139 @@
 				904B3BFA1CD20F59002066FA /* WYController.m */,
 			);
 			path = "网易横栏的用法";
+			sourceTree = "<group>";
+		};
+		906874F51CEBFFFA00A22C7C /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				906874F61CEBFFFA00A22C7C /* CALayer+Anim.h */,
+				906874F71CEBFFFA00A22C7C /* CALayer+Anim.m */,
+				906874F81CEBFFFA00A22C7C /* CALayer+Transition.h */,
+				906874F91CEBFFFA00A22C7C /* CALayer+Transition.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		906874FA1CEBFFFA00A22C7C /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				906874FB1CEBFFFA00A22C7C /* NSArray+Extend.h */,
+				906874FC1CEBFFFA00A22C7C /* NSArray+Extend.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		906874FD1CEBFFFA00A22C7C /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				906874FE1CEBFFFA00A22C7C /* NSDate+Extend.h */,
+				906874FF1CEBFFFA00A22C7C /* NSDate+Extend.m */,
+				906875361CEC039800A22C7C /* NSData+stringFromDate.h */,
+				906875371CEC039800A22C7C /* NSData+stringFromDate.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		906875001CEBFFFA00A22C7C /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				906875011CEBFFFA00A22C7C /* NSObject+Extend.h */,
+				906875021CEBFFFA00A22C7C /* NSObject+Extend.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		906875031CEBFFFA00A22C7C /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				906875041CEBFFFB00A22C7C /* NSString+Extend.h */,
+				906875051CEBFFFB00A22C7C /* NSString+Extend.m */,
+				906875061CEBFFFB00A22C7C /* NSString+Password.h */,
+				906875071CEBFFFB00A22C7C /* NSString+Password.m */,
+				906875331CEC035E00A22C7C /* NSString+dateFromString.h */,
+				906875341CEC035E00A22C7C /* NSString+dateFromString.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		906875081CEBFFFB00A22C7C /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				906875091CEBFFFB00A22C7C /* UIColor+Extend.h */,
+				9068750A1CEBFFFB00A22C7C /* UIColor+Extend.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		9068750B1CEBFFFB00A22C7C /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				9068750C1CEBFFFB00A22C7C /* UIDevice+Extend.h */,
+				9068750D1CEBFFFB00A22C7C /* UIDevice+Extend.m */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		9068750E1CEBFFFB00A22C7C /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				9068750F1CEBFFFB00A22C7C /* UIFont+Extend.h */,
+				906875101CEBFFFB00A22C7C /* UIFont+Extend.m */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		906875111CEBFFFB00A22C7C /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				906875121CEBFFFB00A22C7C /* UIImage+Color.h */,
+				906875131CEBFFFB00A22C7C /* UIImage+Color.m */,
+				906875141CEBFFFB00A22C7C /* UIImage+Cut.h */,
+				906875151CEBFFFB00A22C7C /* UIImage+Cut.m */,
+				906875161CEBFFFB00A22C7C /* UIImage+Extend.h */,
+				906875171CEBFFFB00A22C7C /* UIImage+Extend.m */,
+				906875181CEBFFFB00A22C7C /* UIImage+FixOrientation.h */,
+				906875191CEBFFFB00A22C7C /* UIImage+FixOrientation.m */,
+				9068751A1CEBFFFB00A22C7C /* UIImage+Water.h */,
+				9068751B1CEBFFFB00A22C7C /* UIImage+Water.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		9068751F1CEBFFFB00A22C7C /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				906875201CEBFFFB00A22C7C /* UIView+Extend.h */,
+				906875211CEBFFFB00A22C7C /* UIView+Extend.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		906875391CEC08E800A22C7C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9068753A1CEC08E800A22C7C /* MBProgressHUD+Add.h */,
+				9068753B1CEC08E800A22C7C /* MBProgressHUD+Add.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		9068753D1CEC08ED00A22C7C /* NSMutableAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				9068753E1CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.h */,
+				9068753F1CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.m */,
+			);
+			path = NSMutableAttributedString;
+			sourceTree = "<group>";
+		};
+		906875411CEC090200A22C7C /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				906875421CEC090200A22C7C /* NSDictionary+Extension.h */,
+				906875431CEC090200A22C7C /* NSDictionary+Extension.m */,
+			);
+			path = NSDictionary;
 			sourceTree = "<group>";
 		};
 		9077546E1CD0C42900CBA350 /* CardIO */ = {
@@ -1211,16 +1385,24 @@
 				900033F21CC5C07F000A35CA /* JSNetWork+POST.m in Sources */,
 				900034121CC5C11B000A35CA /* NSObject+Utilty.m in Sources */,
 				90E0C1961CD04FAA005201A4 /* JSPayPal.m in Sources */,
+				906875271CEBFFFB00A22C7C /* NSString+Extend.m in Sources */,
+				9068752D1CEBFFFB00A22C7C /* UIImage+Cut.m in Sources */,
 				900034E41CC5D4FD000A35CA /* JSTabbarViewController.m in Sources */,
 				900034AA1CC5C7CF000A35CA /* UICollectionView+CYLTableViewPlaceHolder.m in Sources */,
 				900033F11CC5C07F000A35CA /* JSNetWork+GET.m in Sources */,
+				906875221CEBFFFB00A22C7C /* CALayer+Anim.m in Sources */,
 				904B3BF11CD20AE6002066FA /* NinaBaseView.m in Sources */,
+				906875441CEC090200A22C7C /* NSDictionary+Extension.m in Sources */,
+				9068752F1CEBFFFB00A22C7C /* UIImage+FixOrientation.m in Sources */,
 				900034DE1CC5D4FD000A35CA /* CollectionViewCell.m in Sources */,
 				90847D9E1CD308E600564D2B /* JSCollectioinController.m in Sources */,
 				900034B61CC5CAD1000A35CA /* RightViewController.m in Sources */,
 				90F745EF1CC4E5B7005F96FD /* ViewController.m in Sources */,
 				904B3BFB1CD20F59002066FA /* WYController.m in Sources */,
 				900034AB1CC5C7CF000A35CA /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
+				9068752E1CEBFFFB00A22C7C /* UIImage+Extend.m in Sources */,
+				906875241CEBFFFB00A22C7C /* NSArray+Extend.m in Sources */,
+				906875401CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.m in Sources */,
 				900034791CC5C30A000A35CA /* JSCollectionViewController+NotWorkView.m in Sources */,
 				900034E61CC5D4FD000A35CA /* NormalTableViewController.m in Sources */,
 				900034A91CC5C7CF000A35CA /* XTNetReloader.m in Sources */,
@@ -1230,19 +1412,25 @@
 				907AE0861CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m in Sources */,
 				908716AB1CCF635800568B56 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
 				900034A81CC5C7CF000A35CA /* WeChatStylePlaceHolder.m in Sources */,
+				906875291CEBFFFB00A22C7C /* UIColor+Extend.m in Sources */,
 				90890A8B1CCF0D77006057ED /* AppDelegate+ThridDTouch.m in Sources */,
 				900034C41CC5D351000A35CA /* AccountViewController.m in Sources */,
 				900034BD1CC5D27C000A35CA /* JSTabBarControllerConfig.m in Sources */,
 				900033EF1CC5C07F000A35CA /* JSMD5.m in Sources */,
 				90E0C1C51CD0A2AD005201A4 /* JSBraintree.m in Sources */,
-				900034971CC5C455000A35CA /* NSMutableAttributedString+CBAttributedString.m in Sources */,
+				906875261CEBFFFB00A22C7C /* NSObject+Extend.m in Sources */,
 				900034E31CC5D4FD000A35CA /* FirstViewController.m in Sources */,
 				900034DF1CC5D4FD000A35CA /* FlowOutCollectionViewController.m in Sources */,
+				906875381CEC039800A22C7C /* NSData+stringFromDate.m in Sources */,
 				900034B01CC5CABF000A35CA /* LeftViewController.m in Sources */,
 				900034E11CC5D4FD000A35CA /* CollectionHeaderView.m in Sources */,
+				906875351CEC035E00A22C7C /* NSString+dateFromString.m in Sources */,
 				900033F31CC5C07F000A35CA /* JSNetWork.m in Sources */,
+				906875281CEBFFFB00A22C7C /* NSString+Password.m in Sources */,
+				9068752A1CEBFFFB00A22C7C /* UIDevice+Extend.m in Sources */,
 				9000347A1CC5C30A000A35CA /* JSCollectionViewController.m in Sources */,
 				907AE0871CEB05EF00B1F7F2 /* JSPresentView.m in Sources */,
+				9068752C1CEBFFFB00A22C7C /* UIImage+Color.m in Sources */,
 				900034821CC5C30A000A35CA /* JSTableViewController+TableView.m in Sources */,
 				904B3BF31CD20AE6002066FA /* UIView+ViewController.m in Sources */,
 				904B3BE11CD1BC9E002066FA /* JSApplePay.m in Sources */,
@@ -1251,10 +1439,12 @@
 				9000348B1CC5C331000A35CA /* JSBasicViewController.m in Sources */,
 				900034B91CC5CC3B000A35CA /* HomeTableCell.m in Sources */,
 				908716A51CCF57FE00568B56 /* UIViewController+ThreeDTouch.m in Sources */,
+				906875321CEBFFFB00A22C7C /* UIView+Extend.m in Sources */,
 				900034101CC5C11B000A35CA /* NSObject+SDWebImage.m in Sources */,
+				906875251CEBFFFB00A22C7C /* NSDate+Extend.m in Sources */,
 				904B3BF21CD20AE6002066FA /* NinaPagerView.m in Sources */,
+				906875231CEBFFFB00A22C7C /* CALayer+Transition.m in Sources */,
 				900034E51CC5D4FD000A35CA /* HeaderAnimationTableViewViewController.m in Sources */,
-				900034961CC5C455000A35CA /* NSDictionary+Extension.m in Sources */,
 				900034831CC5C30A000A35CA /* JSTableViewController.m in Sources */,
 				900034E21CC5D4FD000A35CA /* NormalCollecionViewController.m in Sources */,
 				900033FB1CC5C0DB000A35CA /* JSUserSingletonModel.m in Sources */,
@@ -1265,13 +1455,15 @@
 				900034781CC5C30A000A35CA /* JSCollectionViewController+MJRefresh.m in Sources */,
 				90F745EC1CC4E5B7005F96FD /* AppDelegate.m in Sources */,
 				900034801CC5C30A000A35CA /* JSTableViewController+StretchableTableHeaderView.m in Sources */,
+				9068752B1CEBFFFB00A22C7C /* UIFont+Extend.m in Sources */,
 				90F745E91CC4E5B7005F96FD /* main.m in Sources */,
+				906875301CEBFFFB00A22C7C /* UIImage+Water.m in Sources */,
 				90847DA71CD3430D00564D2B /* Normal002Controller.m in Sources */,
+				9068753C1CEC08E800A22C7C /* MBProgressHUD+Add.m in Sources */,
 				90847DA11CD339D800564D2B /* JSCollectionListCell.m in Sources */,
 				900034111CC5C11B000A35CA /* NSObject+UICateGory.m in Sources */,
 				90847DB21CD35C4B00564D2B /* JSBaseFlowLayout.m in Sources */,
 				908716A81CCF5F8F00568B56 /* JSTableViewController+ThreeDTouch.m in Sources */,
-				9000348F1CC5C3CC000A35CA /* MBProgressHUD+Add.m in Sources */,
 				9000347E1CC5C30A000A35CA /* JSTableViewController+MJRefresh.m in Sources */,
 				900034E01CC5D4FD000A35CA /* CollectionFooterView.m in Sources */,
 				9000347F1CC5C30A000A35CA /* JSTableViewController+NotWorkView.m in Sources */,

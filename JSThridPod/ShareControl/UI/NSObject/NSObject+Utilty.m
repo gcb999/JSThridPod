@@ -9,20 +9,7 @@
 #import "NSObject+Utilty.h"
 
 
-UIColor * rgb(int r, int g, int b)
-{
-	return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1];
-}
 
-UIColor * rgbA(int r, int g, int b, float a)
-{
-	return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a];
-}
-
-UIColor * rgbweb(int rgbval)
-{
-    return rgb((rgbval>>16)&0xFF,(rgbval>>8)&0xFF,(rgbval>>0)&0xFF);
-}
 
 
 @implementation NSObject (Utilty)

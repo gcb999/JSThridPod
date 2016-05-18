@@ -13,47 +13,60 @@
 
 
 
-#pragma mark -------------------获取系统信息-------------------------
+//----------获取系统信息-------------------------
+
+
+#import "UIDevice+Extend.h"
+
+
+//----字体--------
+
+#import "UIFont+Extend.h"
+
+
+//----颜色--------
+
+#import "UIColor+Extend.h"
+
+
+//----字典--------
+
+#import "NSDictionary+Extension.h"
+
+
+//----数组--------
+
+#import "NSArray+Extend.h"
+
+
+//----日期--------
+
+#import "NSDate+Extend.h"
+#import "NSData+stringFromDate.h"
 
 
 
-// 获取IPHONE 版本
-#define IS_IPHONE4 ([UIScreen mainScreen].bounds.size.height == 480.f)
 
-#define IS_IPHONE5 ([UIScreen mainScreen].bounds.size.height == 568.f)
+//----字符串--------
 
-#define IS_IPHONE6 ([UIScreen mainScreen].bounds.size.height == 667.f)
+#import "NSString+Extend.h"
 
-#define IS_IPHONE6_PLUS ([UIScreen mainScreen].bounds.size.height == 736.f)
+#import "NSString+Password.h"
 
-
-
-//IPHONE 高度 和宽度
-
-#define IPHONScreenWidth    [[UIScreen mainScreen] bounds].size.width
-
-#define IPHONScreenHeight    [[UIScreen mainScreen] bounds].size.height
+#import "NSString+dateFromString.h"
 
 
-//获取设备系统版本 7.0
-#define IOS7 [[[UIDevice currentDevice] systemVersion] floatValue]>=7.0 ?YES:NO
+//----NSOject--------
 
-#define KIOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#import "NSObject+Utilty.h"
 
-#define KCURRENT_SYSTEM_VERSION ([[UIDevice currentDevice] systemVersion])
+#import "NSObject+SDWebImage.h"
 
-
-//读取bundle
-
-#define BUNDLE_PATH_IMAGENAME(c) [[NSBundle mainBundle] pathForResource:c ofType:nil]
+#import "NSObject+UICateGory.h"
 
 
-// App
-#define KAPP_VERSION        [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 
-//获取当前语言
-#define KCURRENT_LANGUAGES ([[NSLocale preferredLanguages] objectAtIndex:0])
 
 
 
@@ -88,46 +101,24 @@
 
 
 
-#pragma mark -------------------字体-------------------------
-
-
-/*
- 大小屏字体自动切换有的应用希望有一个好的用户体验会在不同的屏幕上适配不同大小字体，这时就可以使用以下的宏定义来实现。但是如果应用中字体大小不能做到全局统一，就不要使用以下的宏定义来实现字体大小适配。这个就看你所开发的具体情况了
- 
- */
-
-#define IS_SmallScreen (IS_IPHONE5 || IS_IPHONE4)
-
-#define MaxFontSize    (IS_SmallScreen ? 21.f : 25.f )
-#define LagerFontSize  (IS_SmallScreen ? 17.f : 19.f )
-#define BigFontSize    (IS_SmallScreen ? 15.f : 17.f )
-#define NormalFontSize (IS_SmallScreen ? 13.f : 15.f )
-#define SmallFontSize  (IS_SmallScreen ? 11.f : 13.f )
-#define MinFontSize    (IS_SmallScreen ? 9.f  : 11.f )
-
-
-//字体和字体大小
-#define KFONT_NAME @"HelveticaNeue-Light"
-//#define FONT(F) [UIFont fontWithName:@"FZHTJW--GB1-0" size:F]
-
-#define  IS_SystemFont 1
-
-
-#define KMaxFontSize    (IS_SystemFont==1)?[UIFont systemFontOfSize:MaxFontSize]:[UIFont fontWithName:KFONT_NAME size:MaxFontSize]
-#define KLagerFontSize  (IS_SystemFont==1)?[UIFont systemFontOfSize:LagerFontSize]:[UIFont fontWithName:KFONT_NAME size:LagerFontSize]
-#define KBigFontSize    (IS_SystemFont==1)?[UIFont systemFontOfSize:BigFontSize]:[UIFont fontWithName:KFONT_NAME size:BigFontSize]
-#define KNormalFontSize (IS_SystemFont==1)?[UIFont systemFontOfSize:NormalFontSize]:[UIFont fontWithName:KFONT_NAME size:NormalFontSize]
-#define KSmallFontSize  (IS_SystemFont==1)?[UIFont systemFontOfSize:SmallFontSize]:[UIFont fontWithName:KFONT_NAME size:SmallFontSize]
-#define KMinFontSize    (IS_SystemFont==1)?[UIFont systemFontOfSize:MinFontSize]:[UIFont fontWithName:KFONT_NAME size:MinFontSize]
 
 
 
+//获取RGB颜色
 
 
+#define rgba(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define rgb(r,g,b) rgba(r,g,b,1.0f)
+
+//大写
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
 
+#define hexColor(colorV) [UIColor colorWithHexColorString:@#colorV]
+#define hexColorAlpha(colorV,a) [UIColor colorWithHexColorString:@#colorV alpha:a];
 
-#pragma mark ----------------------颜色类---------------------------
+
 
 
 //主色
@@ -139,25 +130,14 @@
 //红色
 #define KCOLOR_RED    [UIColor redColor]
 
-
-//背景色
-#define KBACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
 //清除背景色
 #define KCLEAR_COLOR [UIColor clearColor]
 
-
-// rgb颜色转换（16进制->10进制）
-#define UICOLORFROMRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
-
-//带有RGBA的颜色设置
-#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+//背景色
+#define KBACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
 
 
-// 获取RGB颜色
-#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 
-#define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
 
 
@@ -247,6 +227,10 @@
 #define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
 #define USER_DEFAULT [NSUserDefaults standardUserDefaults]
+
+//读取bundle
+
+#define BUNDLE_PATH_IMAGENAME(c) [[NSBundle mainBundle] pathForResource:c ofType:nil]
 
 
 

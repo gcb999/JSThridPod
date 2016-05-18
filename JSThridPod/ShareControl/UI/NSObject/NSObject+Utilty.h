@@ -9,9 +9,6 @@
 #import <Foundation/Foundation.h>
 
 
-UIColor * rgb(int r, int g, int b);
-UIColor * rgbA(int r, int g, int b, float a);
-UIColor * rgbweb(int rgbval);
 
 @interface NSObject (Utilty)
 
