@@ -84,7 +84,7 @@
         [SWCtrl.data removeAllObjects];
         [SWCtrl reloadFooter];
     }
-    
+   
     
     
     

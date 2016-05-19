@@ -58,12 +58,15 @@
     
     if (flag) {
           JSBaseFlowLayout *flowout=[[JSBaseFlowLayout alloc] initWithDirectionVertical:2 itemHeight:120];
-        JSCtrl.flowLayout=flowout;
+         JSCtrl.flowLayout=flowout;
         
     }
     else{
    
-        JSBaseFlowLayout *flowout=[[JSBaseFlowLayout alloc] initWithCollectionView:JSCtrl.collectionView DirectionHorizontal:CGSizeMake(150, 150) minimumLineSpacing:100];
+        CGFloat width=JSCtrl.collectionView.bounds.size.width-50;
+        CGFloat height=JSCtrl.collectionView.bounds.size.height-100;
+        
+        JSBaseFlowLayout *flowout=[[JSBaseFlowLayout alloc] initWithCollectionView:JSCtrl.collectionView DirectionHorizontal:CGSizeMake(width, height) minimumLineSpacing:50];
         
         JSCtrl.flowLayout=flowout;
     }

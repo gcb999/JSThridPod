@@ -74,6 +74,8 @@ static NSString *const JSCollectionFooterIdentifier = @"JSCollectionFooterIdenti
 
 @property(nonatomic,assign)NSInteger pageIndex;//页码
 
+@property(nonatomic,assign)BOOL pagingEnabled;
+
 
 #pragma mark - 代理方法
 @property(nonatomic,weak)id<JSCollectionViewControllerDelegate> delegate;

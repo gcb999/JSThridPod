@@ -98,6 +98,9 @@
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
     _collectionView.showsHorizontalScrollIndicator=NO;
+    
+
+    _collectionView.pagingEnabled=self.pagingEnabled;
     _collectionView.scrollEnabled=YES;
     _collectionView.showsVerticalScrollIndicator=NO;
     
@@ -130,6 +133,12 @@
     [self.view addSubview:_collectionView];
     
     
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews ];
+    
+    _collectionView.frame=self.view.bounds;
 }
 
 //切换布局
