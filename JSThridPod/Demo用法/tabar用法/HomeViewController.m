@@ -24,6 +24,8 @@
 
 #import "JSPickerViewController.h"
 
+#import "JSPopViewController.h"
+
 @interface HomeViewController ()
 
 @end
@@ -63,7 +65,8 @@
                     @"CollectionView流水布局",
                     @"CYLTabBarController的用法",
                     @"网易横栏的用法",
-                     @"日期与下弹出列表用法"
+                     @"日期与下弹出列表用法",
+                     @"动画弹出VC列表用法"
                     ];
     SWCtrl.data=date;
     [SWCtrl reloadHeader];
@@ -76,9 +79,8 @@
     if (indexPath.row==0) {
   
         NormalTableViewController *ctrl=[[NormalTableViewController alloc] init];
-//        [self.navigationController pushViewController:ctrl animated:NO];
-        [self zoomPhotoVC:ctrl];
-//        [self.navigationController.view.layer  transitionWithAnimType:TransitionAnimTypeRamdom subType:TransitionSubtypesFromRamdom curve:TransitionCurveRamdom duration:2.0f];
+          [self.navigationController pushViewController:ctrl animated:YES];
+
     }
     else if (indexPath.row==1) {
         HeaderAnimationTableViewViewController *ctrl=[[HeaderAnimationTableViewViewController alloc] init];
@@ -106,6 +108,11 @@
         JSPickerViewController *ctrl=[[JSPickerViewController alloc] init];
         [self.navigationController pushViewController:ctrl animated:YES];
     }
+    else if (indexPath.row==7) {
+        
+        JSPopViewController *ctrl=[[JSPopViewController alloc] init];
+     [self.navigationController pushViewController:ctrl animated:YES];
+    }
     
     //CYLTabBarViewController
     
@@ -118,37 +125,29 @@
     
     
     //拿到window
-    UIWindow *window = self.view.window;
-    
-    if(window == nil){
-        
-        NSLog(@"错误：窗口为空！");
-        return;
-    }
-    
-//    PhotoModel *photoModel = self.photoModels[self.index];
-//    
-   vc.navView.hidden = YES;
-    
-    self.view.frame=[UIScreen mainScreen].bounds;
-    
+    UIWindow *window = [UIWindow appWindow];
+    vc.view.frame=window.bounds;
+ 
     //添加视图
     [window addSubview:vc.view];
     
     //添加子控制器
     [self addChildViewController:vc];
     
-     vc.navView.alpha=0;
-    
-    [UIView animateWithDuration:.25f animations:^{
-         vc.navView.alpha=1;
-    } completion:^(BOOL finished) {
-//        photoModel.sourceImageView.hidden = NO;
-    }];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.6f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        vc.view.backgroundColor = [UIColor blackColor];
-    });
+//    vc.navView.hidden = YES;
+// 
+//    
+//     vc.navView.alpha=0;
+//    
+//    [UIView animateWithDuration:.25f animations:^{
+//         vc.navView.alpha=1;
+//    } completion:^(BOOL finished) {
+////        photoModel.sourceImageView.hidden = NO;
+//    }];
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.6f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        vc.view.backgroundColor = [UIColor blackColor];
+//    });
 }
 
 

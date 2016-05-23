@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JSThridPod/ShareControl/UI/JSDatePicker/JSPresentView.m"
-            timestampString = "485170507.851865"
+            filePath = "JSThridPod/ShareControl/UI/List/JSCollectionViewController/JSCollectionViewController/JSCollectionViewController.m"
+            timestampString = "485676500.008749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "+showWithSubView:"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "-viewDidLayoutSubviews"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -40,7 +40,7 @@
 #pragma mark -默认的垂直布局(比较规矩）
 /*
  
- 1:collectionView 对象
+ 1:ContentFrame 区域
  
  2:itemSize item的大小,
  
@@ -49,7 +49,7 @@
  */
 
 
-- (instancetype)initWithCollectionView:(UICollectionView *) collectionView DirectionHorizontal:(CGSize)itemSize minimumLineSpacing:(CGFloat)minimumLineSpacing;
+- (instancetype)initWithContentFrame:(CGRect ) ContentFrame DirectionHorizontal:(CGSize)itemSize minimumLineSpacing:(CGFloat)minimumLineSpacing;
 
 @end
 

@@ -78,6 +78,7 @@
 		9068753C1CEC08E800A22C7C /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068753B1CEC08E800A22C7C /* MBProgressHUD+Add.m */; };
 		906875401CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068753F1CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.m */; };
 		906875441CEC090200A22C7C /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 906875431CEC090200A22C7C /* NSDictionary+Extension.m */; };
+		906F549A1CF2A1D200AFF28C /* JSPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906F54991CF2A1D200AFF28C /* JSPopViewController.m */; };
 		9077547A1CD0C42900CBA350 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907754771CD0C42900CBA350 /* libCardIO.a */; };
 		907AE0861CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 907AE0831CEB05EF00B1F7F2 /* JSPresentCommonViewCtrl.m */; };
 		907AE0871CEB05EF00B1F7F2 /* JSPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907AE0851CEB05EF00B1F7F2 /* JSPresentView.m */; };
@@ -285,6 +286,8 @@
 		9068753F1CEC08ED00A22C7C /* NSMutableAttributedString+CBAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CBAttributedString.m"; sourceTree = "<group>"; };
 		906875421CEC090200A22C7C /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		906875431CEC090200A22C7C /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		906F54981CF2A1D200AFF28C /* JSPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPopViewController.h; sourceTree = "<group>"; };
+		906F54991CF2A1D200AFF28C /* JSPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPopViewController.m; sourceTree = "<group>"; };
 		9077546F1CD0C42900CBA350 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		907754701CD0C42900CBA350 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
 		907754711CD0C42900CBA350 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
@@ -706,6 +709,7 @@
 		900034AC1CC5CA9D000A35CA /* Demo用法 */ = {
 			isa = PBXGroup;
 			children = (
+				906F54971CF2A1B100AFF28C /* 弹出VC */,
 				907AE0881CEB079E00B1F7F2 /* 日期与下弹出列表用法 */,
 				904B3BF81CD20F48002066FA /* 网易横栏的用法 */,
 				900034C51CC5D4FD000A35CA /* collectionView用法 */,
@@ -1005,6 +1009,15 @@
 				906875431CEC090200A22C7C /* NSDictionary+Extension.m */,
 			);
 			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		906F54971CF2A1B100AFF28C /* 弹出VC */ = {
+			isa = PBXGroup;
+			children = (
+				906F54981CF2A1D200AFF28C /* JSPopViewController.h */,
+				906F54991CF2A1D200AFF28C /* JSPopViewController.m */,
+			);
+			path = "弹出VC";
 			sourceTree = "<group>";
 		};
 		9077546E1CD0C42900CBA350 /* CardIO */ = {
@@ -1426,6 +1439,7 @@
 				900034B61CC5CAD1000A35CA /* RightViewController.m in Sources */,
 				90F745EF1CC4E5B7005F96FD /* ViewController.m in Sources */,
 				904B3BFB1CD20F59002066FA /* WYController.m in Sources */,
+				906F549A1CF2A1D200AFF28C /* JSPopViewController.m in Sources */,
 				900034AB1CC5C7CF000A35CA /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
 				9068752E1CEBFFFB00A22C7C /* UIImage+Extend.m in Sources */,
 				906875241CEBFFFB00A22C7C /* NSArray+Extend.m in Sources */,

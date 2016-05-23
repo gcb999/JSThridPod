@@ -48,7 +48,7 @@
 
 #pragma mark -默认的垂直布局(比较规矩）
 
-- (instancetype)initWithCollectionView:(UICollectionView *) collectionView DirectionHorizontal:(CGSize)itemSize minimumLineSpacing:(CGFloat)minimumLineSpacing
+- (instancetype)initWithContentFrame:(CGRect) ContentFrame DirectionHorizontal:(CGSize)itemSize minimumLineSpacing:(CGFloat)minimumLineSpacing
 {
     self = [self init];
     if (self) {
@@ -66,9 +66,9 @@
 
         
         // 垂直方向边缘间距
-        CGFloat insetV = 0.5 * (collectionView.frame.size.height - self.itemSize.height);
+        CGFloat insetV = 0.5 * (ContentFrame.size.height - self.itemSize.height);
         // 水平方向边缘间距
-        CGFloat insetH = 0.5 * (collectionView.frame.size.width - self.itemSize.width);
+        CGFloat insetH = 0.5 * (ContentFrame.size.width - self.itemSize.width);
 
         self.sectionInset = UIEdgeInsetsMake(insetV, insetH, insetV, insetH);
         

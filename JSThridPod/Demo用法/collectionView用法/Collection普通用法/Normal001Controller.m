@@ -26,18 +26,15 @@
     self.title=@"BaseFlowOut流水布局用法";
     
     JSBaseFlowLayout *flowout=[[JSBaseFlowLayout alloc] initWithDirectionVertical:2 itemHeight:120];
-    
- 
-    
-    
-  
-    
     CGRect rect =self.contentView.bounds;
     
     JSCollectionViewController *ctrl=[[JSCollectionViewController alloc] initWithState:JSCollectionViewNormal CollectionViewCellClass:[CollectionViewCell class] delegate:self];
+    
     ctrl.view.frame=rect;
     ctrl.flowLayout=flowout;
+    
     [self.contentView addSubview:ctrl.view];
+    
     [self addChildViewController:ctrl];
     
 }
@@ -45,8 +42,9 @@
 #pragma mark -实现网络请求数据
 
 -(void)JSCollectionViewController:(JSCollectionViewController *)SWCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
+    
         [SWCtrl.data removeAllObjects];
-        NSArray *date=@[@"1",@"2",@"1",@"2",@"1",@"2",@"1",@"2"];
+        NSArray *date=@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8"];
         [SWCtrl.data addObjectsFromArray:date];
         [SWCtrl reloadHeader];
   
@@ -66,7 +64,7 @@
         CGFloat width=JSCtrl.collectionView.bounds.size.width-50;
         CGFloat height=JSCtrl.collectionView.bounds.size.height-100;
         
-        JSBaseFlowLayout *flowout=[[JSBaseFlowLayout alloc] initWithCollectionView:JSCtrl.collectionView DirectionHorizontal:CGSizeMake(width, height) minimumLineSpacing:50];
+        JSBaseFlowLayout *flowout=[[JSBaseFlowLayout alloc] initWithContentFrame:JSCtrl.collectionView.bounds DirectionHorizontal:CGSizeMake(width, height) minimumLineSpacing:50];
         
         JSCtrl.flowLayout=flowout;
     }

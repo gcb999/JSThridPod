@@ -29,12 +29,12 @@
     self.fd_prefersNavigationBarHidden = YES;
     
     if (self.hiddenNav) {
-        self.contentView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, IPHONScreenWidth, IPHONScreenHeight)];
+        self.contentView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, IPHONScreenWidth, IPHONScreenHeight-64-44)];
         [self.view addSubview:self.contentView];
     }
     else{
          [self loadTitleView];
-        self.contentView=[[UIView alloc] initWithFrame:CGRectMake(0, 64, IPHONScreenWidth, IPHONScreenHeight-64)];
+        self.contentView=[[UIView alloc] initWithFrame:CGRectMake(0, 64, IPHONScreenWidth, IPHONScreenHeight-64-44)];
         [self.view addSubview:self.contentView];
     }
   
